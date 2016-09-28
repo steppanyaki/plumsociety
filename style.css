@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(124,103,132,.8);
+}
+
+.logo {
+    position: relative;
+    height: 40px;
+    margin: 8px 150px;
+}
+
+.nav {
+    display: inline-block;
+    list-style: none;
+    float: right;
+    margin: 18px 100px;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline-flex;
+    position: relative;
+    padding: 0 20px;
+    color: #fff;
+}
+
+.container {
+    height: 850px;
+    width: 100%;
+}
+
+.jumbotron .container {
+    background-image: url("https://cloud.githubusercontent.com/assets/20543073/18931755/7cfbeb60-859b-11e6-9f3c-90363bcf889f.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.supporting1 {
+    background-color: #7C6784;
+    height: 500px;
+    width: 100%;
+}
+
+.supporting2 {
+    height: 400px;
+    width: 100px;    
+}
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),
+ url("https://cloud.githubusercontent.com/assets/20543073/18932428/4ffce65c-859e-11e6-8f02-dbeceb43ae62.png");
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 940px) {
+    .header {
+        height:  45px;
+    }
+    .logo {
+        height: 40px;
+        margin: 5px 100px;;
+        text-align: center;
+    }
+    .nav ul {
+        width: 100%;
+        margin-top: -8px;
+        left: -10px;
+    }
+    .nav ul li {
+        width: 100%;
+        font-weight: 100;
+        text-align: center;
+        background-color: rgba(124,103,132,.8);
+    }
+}
