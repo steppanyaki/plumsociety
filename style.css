@@ -81,7 +81,7 @@ a:hover {
     float: left;
     width: 33%;
     text-align: center;
-    padding: 30px 2px;
+    padding: 30px px;
 }
 
 .supporting img {
@@ -90,9 +90,8 @@ a:hover {
     padding: 10px;
 }
 
-.supporting h1 {
-    text-transform: uppercase;
-    font-weight: lighter;
+.supporting p {
+    padding: 0 30px;
 }
 
 .main {
