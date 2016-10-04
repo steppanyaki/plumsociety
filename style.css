@@ -2,6 +2,23 @@ html, body {
     margin: 0;
     padding: 0; 
     font-family: 'Raleway', sans-serif;
+    color: #fff;
+    background-size: cover;
+}
+
+h1 {
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
 }
 
 .header {
@@ -17,24 +34,24 @@ html, body {
     margin: 8px 150px;
 }
 
-.nav {
+nav {
     float: right;
     margin: 18px 100px;
 }
 
-.nav ul {
+ul {
     margin: 0;
     list-style: none;
 }
 
-.nav li {
+nav li {
     display: inline-block;
     position: relative;
     padding: 14px 20px;
     top: -15px
 }
 
-li a {
+a {
     color: #fff;
     text-decoration: none;
 }
@@ -44,95 +61,125 @@ a:hover {
 }
 
 .container {
-    height: 850px;
+    height: 400px;
     width: 100%;
 }
 
 .jumbotron {
-    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("https://cloud.githubusercontent.com/assets/20543073/18931755/7cfbeb60-859b-11e6-9f3c-90363bcf889f.jpg");
+    height: 750px;
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("images/cover.jpg");
     background-size: cover;
     background-position: center;
 }
 
-.supporting1 {
-    background-color: #7C6784;
-    height: 500px;
-    width: 100%;
+.supporting {
+    padding: 70px;
 }
 
-.supporting2 {
-    height: 400px;
-    width: 100px;    
+.supporting .col {
+    color: #616161;
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 30px 2px;
+}
+
+.supporting img {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+}
+
+.supporting h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.main {
+    height: 650px;
+    width: 100%;   
+    background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),url("images/main.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.main .col {
+    text-align: center;
+    float: left;
+    width: 33%;
+    text-align: center;
+    padding: 40px 2px;
+}
+
+.main img {
+    height: 250px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    margin: 20px;
 }
 
 .footer {
-    height: 300px;
+    height: 100px;
     width: 100%;
-    background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),
- url("https://cloud.githubusercontent.com/assets/20543073/18932428/4ffce65c-859e-11e6-8f02-dbeceb43ae62.png");
-    background-position: center;
-    background-size: cover;
+    background-color: #333;
 }
 
-@media screen and (max-width:980px) {
-    .header {
-    height:  45px;
-    }
-    .logo {
-        height: 40px;
-        margin: 5px 20px;
-    }
-    .nav {
-        position: relative;
-        right: -40px;
-    }
-    .nav ul li {
-        font-weight: 100;
-        top: -12px;
-        right: -50px;
-        padding: 1px 20px;
-    }
-    .container {
-    top: 100px;
-    height: 500px;
-    width: 100%;
-    }
-    .jumbotron {
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        top: 6px;
-        background-image:
-           linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),url("https://cloud.githubusercontent.com/assets/20543073/18931755/7cfbeb60-859b-11e6-9f3c-90363bcf889f.jpg");
-        background-size: cover;
-        background-position: center;
-    }
-    .supporting1 {
-        position: relative;
-        top: 500px;
-        z-index: -1;
-    }
+.footer p {
+    position: absolute;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 15px;
 }
 
-@media screen and (max-width:640px) {
+/* mobile */
+@media screen and (max-width: 480px) {
     .header {
         height:  45px;
     }
     .logo {
-        margin: 5px 100px;
+        height: 30px;
+        margin: 10px 20px;
     }
-    .nav ul {
-        margin-top: -8px;
-        left: -10px;
-        display: inline-block;
+    nav {
+        position: relative;
+        top: -60px;
+        right: -100px;
+    }
+    .burger-nav {
+        display: block;
+        height: 25px;
         width: 100%;
+        background: url(images/burger.png) no-repeat 98% center;
+        background-size: contain;
+        cursor: pointer;
+        margin-bottom: 10px;
     }
-    .nav ul li {
+    ul {
+        overflow: hidden;
+        //height: 0;
+    }
+    ul.open{
+        height: auto;
+    }
+    ul li {
+        float: none;
+        top: -2px;
+        background: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8));
+        border-bottom: 1px solid #cecece;
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+    li a {
         font-weight: 100;
-        top: -12px;
-        float: right;
-        right: -20px;
-        padding: 4px 20px;
+        margin: 0;
     }
     .container {
     top: 50px;
@@ -145,7 +192,7 @@ a:hover {
         width: 100%;
         top: 45px;
         background-image:
-           linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),url("https://cloud.githubusercontent.com/assets/20543073/18931755/7cfbeb60-859b-11e6-9f3c-90363bcf889f.jpg");
+           linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),url(images/cover.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -155,3 +202,4 @@ a:hover {
         z-index: -1;
     }
 }
+
