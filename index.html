@@ -3,26 +3,25 @@
     <head>
         <link rel='stylesheet' href='style.css'/>
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <div class="header">
-            <div class="container">
-                <div class="row">
-                    <img class="logo" src="images/logo.png">
-                    <nav>
-                        <a class="burger-nav"></a>
-                        <ul>
-                            <li><a href="#">HOME</a></li>
-                            <li><a href="#">ABOUT US</a></li>
-                            <li><a href="#">BLOG</a></li>
-                            <li><a href="#">CONTACT US</a></li>
-                        </ul>
-                    </nav>
-                </div>
+        <header>
+            <div class="wrapper">
+                <img class="logo" src="images/logo.png">
+                <nav>
+                    <a class="burger-nav"></a>
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">BLOG</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+        </header>
         <div class="jumbotron">
             <div class="container">
 
@@ -30,17 +29,17 @@
         </div>
         <div class="supporting">
             <div class="container">
-                <div class="col">
+                <div class="col-sm-4 col-xs-12">
                     <img src="images/flag.svg">
                     <h1>Our Mission</h1>
                     <p>We are on a mission to create <strong>Plum</strong> products that are revolutionary to your day-to-day</p>
                 </div>
-                <div class="col">
+                <div class="col-sm-4 col-xs-12">
                     <img src="images/plum.svg">
                     <h1>The Society</h1>
                     <p>Team Plum is a <strong>society</strong> of enterprising female entrepreneurs with a passion for creative products. We are driven by seeing everyday ideas come to life; especially those with a focus on simplicity, style, and fun. The questions "why not?" and "how can we make things happen?" are always top of mind.</p>
                 </div>
-                <div class="col">
+                <div class="col-sm-4 col-xs-12">
                     <img src="images/innovation.svg">
                     <h1>The Bio</h1>
                     <p>Our team has a track record of innovating, launching, and building successful brands. <br>Learn more.</p>
@@ -50,32 +49,36 @@
         
         </div>
         <div class="main">
+            <div class="container">
             <h1>Nice to Meet You</h1>
-            <div class="col">
-                <img src="images/Stephanie.png">
+            <div class="col-sm-4 col-xs-12">
+                <img class="active" src="images/Stephanie.png">
                 <h3>Stephanie Houng</h3>
                 <p>Operations / Finance</p>
             </div>
-            <div class="col">
-                <img src="images/placeholder.png">
+            <div class="col-sm-4 col-xs-12">
+                <img class="active" src="images/placeholder.png">
                 <h3>Julie Galich</h3>
                 <p>Sales / Marketing</p>
             </div>
-            <div class="col">
+            <div class="col-sm-4 col-xs-12">
                 <img src="images/stacey.png">
                 <h3>Stacey Kirch</h3>
                 <p>Product / Distribution</p>
             </div>
-            <h2>Interested in Learning More?</h2>
-            <br>
-            <a href="#" class="btn">Give Us a Ring</a>
-            <a href="#" class="btn">Drop Us a Line</a>
+            <div class="row">
+                <h2>Interested in Learning More?</h2>
+                <a href="#" class="btn">Give Us a Ring</a>
+                <a href="#" class="btn">Drop Us a Line</a>
+            </div>
+            </div>
         </div>
         <div class="footer">
             <p>&copy; Plum Society</p>
         </div>
     </body>
     
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquery-3.1.1.js"></script>
     <script src="menu.js"></script>
+    <script src="images.js"></script>
 </html>
