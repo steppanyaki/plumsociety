@@ -207,6 +207,12 @@ a:hover {
         top: 350px;
         z-index: -1;
     }
+    .supporting img {
+        height: 80px;
+    }
+    .supporting h1 {
+        font-size: 30px;
+    }
     .main {
         height: 1500px;
         position: relative;
