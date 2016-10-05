@@ -208,12 +208,13 @@ a:hover {
         z-index: -1;
     }
     .main {
-        height: 1600px;
+        height: 1500px;
         position: relative;
         top: 1000px;
     }
     .main h1 {
         padding: 0;
+        font-size: 30px;
     }
     .main .container {
         position: relative;
@@ -229,6 +230,6 @@ a:hover {
     }
     .footer {
         position: relative;
-        top: 1050px;
+        top: 1000px;
     }
 }
