@@ -203,6 +203,7 @@ a:hover {
         background-position: center;
     }
     .supporting {
+        height: 300px;
         position: relative;
         top: 350px;
         z-index: -1;
