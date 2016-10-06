@@ -258,11 +258,11 @@ a:hover {
     }
     .main img {
         height: 300px;
-        margin: 50px 20px 20px 20px;
+        margin: 50px 0px 20px 0px;
     }
     .main .words {
         position: absolute;
-        margin: -320px -130px;
+        margin: -320px -140px;
         opacity: .01;
     }
     .main h2 {
