@@ -157,6 +157,12 @@ a:hover {
     color: #fff !important;
 }
 
+#clear-btn:hover {
+    background-color: slategray;
+    border: 2px solid slategray;
+    color: #fff !important;
+}
+
 .footer {
     height: 100px;
     width: 100%;
@@ -174,16 +180,14 @@ a:hover {
 
 @media screen and (max-width: 480px) {
     .logo {
-        position: relative;
-        height: 40px;
-        float: left;
-        margin: 0 -90px;
+        height: 35px;
+        margin: auto;
     }
     .burger-nav {
+        margin: 8px -90px;
         display: block;
-        height: 28px;
-        margin: 4px -90px;
-        background: url(images/burger.svg) no-repeat right top;
+        height: 24px;
+        background: url(images/burger.svg) no-repeat 98% top;
         cursor: pointer;
     }
     header nav {
@@ -233,15 +237,16 @@ a:hover {
         z-index: -1;
     }
     .supporting img {
+        margin: 50px 0 10px 0;
         height: 80px;
     }
     .supporting h1 {
         font-size: 30px;
     }
     .main {
-        height: 1500px;
+        height: 1700px;
         position: relative;
-        top: 1000px;
+        top: 1200px;
     }
     .main h1 {
         padding: 0;
@@ -249,7 +254,7 @@ a:hover {
     }
     .main .container {
         position: relative;
-        top: -500px;
+        top: -700px;
     }
     .main img {
         height: 300px;
@@ -258,12 +263,16 @@ a:hover {
     .words {
         
     }
-    .main .container h2 {
-        margin: 5px;
+    .main h2 {
+        top: 30px;
+        padding: 40px 0;
         font-size: 25px;
+    }
+    .btn {
+        margin: 18px 0px;
     }
     .footer {
         position: relative;
-        top: 1000px;
+        top: 1200px;
     }
 }
