@@ -57,6 +57,7 @@ nav li {
 a {
     color: #fff !important;
     text-decoration: none;
+    letter-spacing: 1px;
 }
 
 a:hover {
@@ -64,9 +65,9 @@ a:hover {
     color: black !important;
 }
 
-.container {
-    height: 400px;
-    width: 100%;
+.main .container {
+    margin: 0;
+    width: 100%
 }
 
 .jumbotron {
@@ -77,14 +78,14 @@ a:hover {
 }
 
 .supporting {
-    height: 450px;
+    height: 420px;
     color: #616161 !important;
     text-align: center;
 }
 
 .supporting img {
-    height: 120px;
-    margin: 50px 30px 10px 30px;
+    height: 100px;
+    margin: 40px 30px 10px 30px;
 }
 
 .main {
@@ -101,10 +102,19 @@ a:hover {
     color: #fff;
     letter-spacing: 3px;
     padding-bottom: 60px;
+    text-align: center;
 }
 
 .main img {
-    height: 300px;
+    height: 350px;
+    cursor: pointer;
+}
+
+.words {
+    position: absolute;
+    margin: 0 -350px;
+    opacity: .01;
+    cursor: pointer;
 }
 
 .main p {
@@ -114,17 +124,15 @@ a:hover {
     color: #fff !important;
 }
 
-.main .row {
-    position: relative;
+h2 {
     color: #fff !important;
-    top: 50px !important;
 }
 
 .btn {
     padding: 10px 50px !important;
     background-color: black;
     font-size: 16px !important;
-    margin: 20px;
+    margin: 80px 20px;
     border-radius: 0px !important;
 }
 
