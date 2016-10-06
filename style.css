@@ -262,7 +262,7 @@ a:hover {
     }
     .main .words {
         position: absolute;
-        margin: -320px -140px;
+        margin: 50px -300px;
         opacity: .01;
     }
     .main h2 {
