@@ -295,15 +295,12 @@ a:hover {
     }
     .main .row img {
         height: 300px;
-        margin: 10px -50px;
     }
     .words {
         height: 306px !important;
-        left: 52px;
+        left: 40px;
     }
     .main p {
-        padding: 0;
-        margin: 10px -25px;
         text-align: center;
         font-size: 14px;
     }
