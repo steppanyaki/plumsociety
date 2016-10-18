@@ -22,6 +22,23 @@ p {
     font-weight: 100;
 }
 
+span {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 40px;
+    color: #fff;
+}
+
+span2 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #333;
+    line-height: 30px;
+}
+
 header {
     position: fixed;
     height: 50px;
@@ -82,17 +99,17 @@ a:hover {
     width: 90%;
 }
 
-.supporting p {
-    padding: 20px;
-}
-
 .supporting img {
     height: 100px;
     margin: 40px 30px 10px 30px;
 }
 
+.supporting p {
+    padding: 20px;
+}
+
 .main {
-    height: 800px;
+    height: 1400px;
     width: 100%;   
     background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),url("images/main.jpg");
     background-position: center;
@@ -102,54 +119,77 @@ a:hover {
 }
 
 .main .container {
-    margin: 0;
-    width: 100%
+    width: 95%;
+}
+
+.main .row {
+    padding: 10px;
+    margin: 20px 0;
 }
 
 .main h1 {
     color: #fff;
     letter-spacing: 3px;
     padding-bottom: 40px;
+    font-size: 50px;
     text-align: center;
 }
 
 .main img {
     height: 350px;
+    margin: 0;
+    padding: 0;
     cursor: pointer;
 }
 
 .words {
     position: absolute;
-    margin: 0 -350px;
+    height: 356px !important;
+    top: -2.6px;
+    left: 42px;
     opacity: .01;
     cursor: pointer;
 }
 
-.main p {
+.main h4 {
     text-transform: uppercase;
     font-size: 15px;
     line-height: 30px;
     color: #fff !important;
 }
 
-.main h2 {
-    position: relative;
+.main p {
+    color: #fff;
+    padding: 20px 20px;
+    text-align: justify;
+}
+
+.footer {
+    height: 250px;
+    width: 100%;
+    margin: -20px 0px;
+    background-color: #333;
+    text-align: center;
+}
+
+.footer h2 {
+    padding: 40px;
     color: #fff !important;
-    margin: 500px 0 0 0;
 }
 
 .btn {
     padding: 10px 50px !important;
-    background-color: black;
+    background-color: #fff;
+    color: #333 !important;
     font-size: 16px !important;
-    margin: 30px 20px;
     border-radius: 0px !important;
+    margin: 0 20px;
 }
 
 #clear-btn {
     background: none;
-    border: 2px solid black;
-    color: black !important;
+    border: 2px solid #fff;
+    color: #fff !important;
 }
 
 .btn:hover {
@@ -163,14 +203,8 @@ a:hover {
     color: #fff !important;
 }
 
-.footer {
-    height: 100px;
-    width: 100%;
-    background-color: #333;
-}
-
 .footer p {
-    position: absolute;
+    text-align: right;
     margin: 40px;
     text-transform: uppercase;
     color: #fff !important;
@@ -179,6 +213,10 @@ a:hover {
 
 
 @media screen and (max-width: 480px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
     .logo {
         height: 35px;
         margin: auto;
@@ -214,11 +252,6 @@ a:hover {
         padding: 10px;
         font-weight: 200;
     }
-    .container {
-    top: 50px;
-    height: 260px;
-    width: 100%;
-    }
     .jumbotron {
         position: absolute;
         height: 300px;
@@ -230,51 +263,65 @@ a:hover {
         background-size: cover;
         background-position: center;
     }
+    
     .supporting {
-        height: 300px;
+        height: 250px;
         position: relative;
         top: 350px;
         z-index: -1;
     }
     .supporting img {
-        margin: 50px 0 10px 0;
+        margin: 40px 0 10px 0;
         height: 80px;
     }
     .supporting h1 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .supporting p {
+        margin: 0 -40px;
     }
     .main {
-        height: 1800px;
+        height: 3000px;
         position: relative;
-        top: 1200px;
-    }
-    .main h1 {
-        padding: 0;
-        font-size: 30px;
+        top: 1100px;
     }
     .main .container {
         position: relative;
-        top: -700px;
+        width: 90%;
+        top: -600px;
     }
-    .main img {
+    .main h1 {
+        font-size: 30px;
+    }
+    .main .row img {
         height: 300px;
-        margin: 50px 0px 20px 0px;
+        margin: 10px -50px;
     }
-    .main .words {
-        position: absolute;
-        margin: 50px -300px;
-        opacity: .01;
+    .words {
+        height: 306px !important;
+        left: 52px;
     }
-    .main h2 {
-        top: 30px;
-        padding: 40px 0;
-        font-size: 25px;
+    .main p {
+        padding: 0;
+        margin: 10px -25px;
+        text-align: center;
+        font-size: 14px;
     }
     .btn {
         margin: 18px 0px;
     }
     .footer {
-        position: relative;
-        top: 1200px;
+        height: 400px;
+        margin: 1100px 0;
     }
+    .footer p {
+        text-align: center;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
 }
