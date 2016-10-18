@@ -53,7 +53,6 @@ header {
 .logo {
     position: relative;
     height: 40px;
-    margin: 0 60px;
 }
 
 nav {
@@ -219,7 +218,6 @@ a:hover {
     }
     .logo {
         height: 35px;
-        margin: auto;
     }
     .burger-nav {
         margin: 8px -90px;
