@@ -281,7 +281,7 @@ a:hover {
         margin: 0 -40px;
     }
     .main {
-        height: 3000px;
+        height: 3200px;
         position: relative;
         top: 1100px;
     }
@@ -312,7 +312,7 @@ a:hover {
     }
     .footer {
         height: 400px;
-        margin: 1100px 0;
+        margin: 1300px 0;
     }
     .footer p {
         text-align: center;
