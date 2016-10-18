@@ -287,7 +287,7 @@ a:hover {
     }
     .main .container {
         position: relative;
-        width: 98%;
+        width: 90%;
         top: -600px;
     }
     .main h1 {
@@ -295,12 +295,15 @@ a:hover {
     }
     .main .row img {
         height: 300px;
+        margin: 10px -50px;
     }
     .words {
         height: 306px !important;
         left: 40px;
     }
     .main p {
+        padding: 0;
+        margin: 10px -20px;
         text-align: center;
         font-size: 14px;
     }
