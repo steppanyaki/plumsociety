@@ -218,6 +218,7 @@ a:hover {
     }
     .logo {
         height: 35px;
+        margin: 0 -90px;
     }
     .burger-nav {
         margin: 8px -90px;
