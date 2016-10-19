@@ -92,7 +92,7 @@ a:hover {
     float: right;
     height: 300px;
     width: 50%;
-    margin: 280px auto;
+    margin: 280px 0 auto;
     color: #fff;
     font-family: 'Raleway', sans-serif !important;
 }
@@ -101,7 +101,6 @@ a:hover {
     font-weight: 800 !important;
     text-transform: uppercase;
     font-size: 80px !important;
-    letter-spacing: 2px;
     }
 
 .jumbotron p{
