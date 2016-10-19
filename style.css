@@ -101,6 +101,7 @@ a:hover {
     font-weight: 800 !important;
     text-transform: uppercase;
     font-size: 80px !important;
+    letter-spacing: 2px;
     }
 
 .jumbotron p{
