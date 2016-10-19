@@ -6,11 +6,6 @@ html, body {
     color: #fff;
 }
 
-h1 {
-    font-weight: 200 !important;
-    text-transform: uppercase;
-}
-
 h3 {
     font-size: 25px;
     color: #fff !important;
@@ -83,11 +78,22 @@ a:hover {
 
 .jumbotron {
     height: 750px;
-    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)), url("images/cover.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("images/cover.jpg");
     background-size: cover;
     background-position: center;
 }
 
+.jumbotron h1 {
+    width: 45%;
+    float: right;
+    margin: 200px 0;
+    text-transform: capitalize;
+    text-align: left;
+    line-height: 100px;
+    font-weight: 400;
+    color: #fff !important;
+    }
+    
 .supporting {
     height: 420px;
     color: #616161 !important;
@@ -102,7 +108,10 @@ a:hover {
     height: 100px;
     margin: 40px 30px 10px 30px;
 }
-
+.supporting h1 {
+    font-weight: 200 !important;
+    text-transform: uppercase;
+}
 .supporting p {
     padding: 20px;
 }
@@ -218,26 +227,22 @@ a:hover {
     }
     .logo {
         height: 35px;
-        margin: 0 -90px;
+        margin: 0 -70px;
     }
     .burger-nav {
-        margin: 8px -90px;
-        display: block;
-        height: 24px;
+        margin: auto;
         background: url(images/burger.svg) no-repeat 98% top;
         cursor: pointer;
     }
     header nav {
         position: relative;
-        width:50%;
-        float: right;
-        top: -40px;
+        width: 100%;
+        right: -90px;
     }
     header nav ul {
         position: relative;
         margin: 10px 0;
         overflow: hidden;
-        height: 0;
     }
     header nav ul.open{
         height: auto;
