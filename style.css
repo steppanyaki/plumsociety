@@ -92,7 +92,7 @@ a:hover {
     float: right;
     height: 300px;
     width: 50%;
-    margin: 280px 0 auto;
+    margin: 250px 0 auto;
     color: #fff;
     font-family: 'Raleway', sans-serif !important;
 }
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .jumbotron .btn {
-    margin: 0 180px;
+    margin: 10px 0;
     border: ;
     background-color: #5db0ca;
     color: #fff !important;
