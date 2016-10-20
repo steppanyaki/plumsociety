@@ -109,6 +109,14 @@ a:hover {
     line-height: 2;
 }
 
+.jumbotron .btn {
+    margin: 0 180px;
+    border: ;
+    background-color: #5db0ca;
+    color: #fff !important;
+    text-transform: uppercase;
+}
+
 .supporting {
     height: 460px;
     color: #616161 !important;
