@@ -92,12 +92,12 @@ a:hover {
     float: right;
     height: 300px;
     width: 50%;
-    margin: 250px 0 auto;
+    margin: 200px 0 auto;
     color: #fff;
     font-family: 'Raleway', sans-serif !important;
 }
 .jumbotron img {
-    height: 170px;   
+    height: 180px;   
 }
 
 .jumbotron p {
@@ -110,7 +110,7 @@ a:hover {
 }
 
 .jumbotron .btn {
-    margin: 10px 0;
+    margin: 10px 160px;
     background-color: #5db0ca;
     color: #fff !important;
     text-transform: uppercase;
