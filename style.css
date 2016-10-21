@@ -1,42 +1,52 @@
 html, body {
     margin: 0;
-    padding: 0; 
-    font-family: 'Raleway', sans-serif;
-    background-size: cover;
-    color: #fff;
+    padding: 0;
+}
+
+/* Font Settings */
+h1 {
+    color: #fff !important;
+    text-transform: uppercase;
+    font-weight: 100 !important;
+    letter-spacing: 3px;
+    font-size: 50px !important;
+    text-align: center;
+    margin: 30px 0 !important;
+}
+
+h2 {
+    font-weight: 100 !important;
+    text-transform: uppercase;
 }
 
 h3 {
-    font-size: 25px;
-    color: #fff !important;
+    width: 100%;
+    margin: 20px;
+    text-align: left !important;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    font-size: 50px;
+    text-align: center;
+}
+
+h4 {
+    margin: 20px;
+    width: 100%;
+    text-align: left;
+    color: #333;
+    font: 800 20px/1.5 'Raleway', sans-serif !important;
+}
+
+h5 {
+    font: 300 30px/1.5 'Raleway', sans-serif !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 }
 
 p {
-    font-family: Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 100;
-}
-
-span {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 40px;
-    letter-spacing: 2px;
-    color: #fff;
-}
-
-span2 {
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 18px;
-    letter-spacing: 1px;
-    color: #333;
-    line-height: 30px;
-}
-
-span3 {
-    font-weight: 200;
+    font: 100 16px Helvetica, sans-serif;
 }
 
 header {
@@ -47,11 +57,16 @@ header {
     z-index: 1000;  
 }
 .wrapper {
-    margin: 8px 100px;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    padding: 5px;
 }
 
 .logo {
     position: relative;
+    left: -100px;
     height: 40px;
 }
 
@@ -89,10 +104,11 @@ a:hover {
 }
 
 .jumbotron .container {
+    position: relative;
     float: right;
     height: 300px;
     width: 50%;
-    margin: 200px 0 auto;
+    margin: 230px 0 auto;
     color: #fff;
     font-family: 'Raleway', sans-serif !important;
 }
@@ -100,29 +116,21 @@ a:hover {
     height: 180px;   
 }
 
-.jumbotron p {
-    font-size: 30px !important;
-    font-weight: 300 !important;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-family: 'Raleway', sans-serif;
-    line-height: 2;
-}
-
 .jumbotron .btn {
-    margin: 10px 160px;
+    margin: 30px 160px;
     background-color: #5db0ca;
     color: #fff !important;
     text-transform: uppercase;
 }
 
 .supporting {
-    height: 460px;
+    height: 600px;
     color: #616161 !important;
     text-align: center;
 }
 
 .supporting .container {
+    position: relative;
     margin: 40px auto;
     width: 90%;
 }
@@ -131,13 +139,9 @@ a:hover {
     height: 100px;
     margin: 40px 30px 10px 30px;
 }
-.supporting h1 {
-    font-weight: 200 !important;
-    text-transform: uppercase;
-}
+
 .supporting p {
     padding: 15px;
-    font-size: 17px;
 }
 
 .main {
@@ -151,22 +155,13 @@ a:hover {
 }
 
 .main .container {
+    position: relative;
     width: 95%;
 }
 
 .main .row {
     padding: 10px;
     margin: 10px 0;
-}
-
-.main h1 {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 200;
-    letter-spacing: 3px;
-    padding-bottom: 40px;
-    font-size: 50px;
-    text-align: center;
 }
 
 .main img {
@@ -213,17 +208,9 @@ a:hover {
     margin: 2px 2px;
 }
 
-.main h4 {
-    text-transform: uppercase;
-    font-size: 15px;
-    line-height: 30px;
-    color: #fff !important;
-}
-
 .main p {
     color: #fff;
-    font-size: 16px;
-    padding: 20px 20px;
+    padding: 0 20px;
     text-align: left;
 }
 
@@ -238,15 +225,16 @@ a:hover {
 .footer h2 {
     padding: 50px;
     color: #fff !important;
+    text-transform: none;
+    font-weight: 400 !important;
 }
 
 .btn {
-    padding: 10px 50px !important;
+    padding: 10px 60px !important;
     background-color: #fff;
     color: #333 !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     border-radius: 0px !important;
-    margin: 0 20px;
 }
 
 #clear-btn {
@@ -280,10 +268,14 @@ a:hover {
         margin: 0;
         padding: 0;
     }
-    .logo {
-        height: 35px;
-        margin: 0 -70px;
+    header {
+        margin: 0;
+        position: relative;
     }
+    .wrapper {
+        width: 100%
+    }
+    /*
     .burger-nav {
         margin: auto;
         background: url(images/burger.svg) no-repeat 98% top;
@@ -310,7 +302,8 @@ a:hover {
         display: block;
         padding: 10px;
         font-weight: 200;
-    }
+    }*/
+    
     .jumbotron {
         position: absolute;
         height: 300px;
@@ -333,9 +326,7 @@ a:hover {
         margin: 40px 0 10px 0;
         height: 80px;
     }
-    .supporting h1 {
-        font-size: 25px;
-    }
+    
     .supporting p {
         margin: 0 -40px;
     }
@@ -349,9 +340,7 @@ a:hover {
         width: 90%;
         top: -600px;
     }
-    .main h1 {
-        font-size: 30px;
-    }
+    
     .main .row img {
         height: 300px;
         margin: 10px -50px;
