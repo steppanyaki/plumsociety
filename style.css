@@ -117,6 +117,10 @@ a:hover {
 }
 
 .jumbotron .btn {
+    padding: 10px 60px !important;
+    color: #fff !important;
+    font-size: 18px !important;
+    border-radius: 0px;
     margin: 30px 160px;
     background-color: #5db0ca;
     color: #fff !important;
@@ -145,7 +149,7 @@ a:hover {
 }
 
 .main {
-    height: 1600px;
+    height: 1500px;
     width: 100%;   
     background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),url("images/main.jpg");
     background-position: center;
@@ -159,25 +163,30 @@ a:hover {
     width: 95%;
 }
 
+.main h1 {
+    margin: 50px 0 !important;
+}
+
 .main .row {
+    position: relative;
     padding: 10px;
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .main img {
-    height: 370px;
-    margin: 20px 0;
+    height: 350px;
+    margin: 10px 0;
     padding: 0;
     cursor: pointer;
 }
 
 .hover-text {
-    width: 352px;
-    height: 352px;
+    width: 334px;
+    height: 334px;
     background: #271826;
     position: absolute;
-    top: 29px;
-    left: 44px;
+    top: 18px;
+    left: 53px;
     border-radius: 50%;
     opacity: 0;
     padding: 20px;
@@ -189,22 +198,22 @@ a:hover {
 .hover-text p {
     text-align: center !important;
     font-weight: 600;
-    margin: 40px 8px;
+    margin: 40px 20px;
     padding: 0 !important;
 }
 
 .hover-text:hover { opacity: .9 }
 
 #stacey {
-    height: 361px;
-    width: 361px;
-    margin: -7px -5px !important;
+    height: 341px;
+    width: 341px;
+    margin: -6px -4px !important;
     
 }
 
 #steph {
-    height: 348px;
-    width: 348px;
+    height: 330px;
+    width: 330px;
     margin: 2px 2px;
 }
 
@@ -215,7 +224,7 @@ a:hover {
 }
 
 .footer {
-    height: 280px;
+    height: 300px;
     width: 100%;
     margin: -20px 0px;
     background-color: #333;
@@ -223,24 +232,19 @@ a:hover {
 }
 
 .footer h2 {
-    padding: 50px;
+    padding: 35px;
     color: #fff !important;
     text-transform: none;
     font-weight: 400 !important;
 }
 
-.btn {
+.footer .btn {
     padding: 10px 60px !important;
-    background-color: #fff;
-    color: #333 !important;
-    font-size: 18px !important;
-    border-radius: 0px !important;
-}
-
-#clear-btn {
-    background: none;
-    border: 2px solid #fff;
+    background-color: none;
     color: #fff !important;
+    font-size: 18px !important;
+    border: 2px solid #fff !important;
+    border-radius: 0px !important;
 }
 
 .btn:hover {
@@ -255,8 +259,15 @@ a:hover {
 }
 
 .footer p {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 60px 10px 0;
+}
+
+.copyright {
+    margin: 0 50px;
     text-align: right;
-    margin: 40px 50px;
     text-transform: uppercase;
     color: #fff !important;
     font-size: 15px;
