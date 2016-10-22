@@ -93,7 +93,7 @@ a {
 
 a:hover {
     text-decoration: none !important;
-    color: black !important;
+    color: #2c2c2c !important;
 }
 
 .jumbotron {
@@ -116,32 +116,44 @@ a:hover {
     height: 180px;   
 }
 
-.jumbotron .btn {
+.btn {
     padding: 10px 60px !important;
     color: #fff !important;
     font-size: 18px !important;
-    border-radius: 0px;
+    border: 2px solid #fff !important;
+    border-radius: 0px !important;
     margin: 30px 160px;
-    background-color: #5db0ca;
+    background-color: none;
     color: #fff !important;
     text-transform: uppercase;
 }
 
+.btn:hover {
+    background-color: #7C6784;
+    color: #fff !important;
+    border: 2px solid #7C6784 !important;
+}
+
 .supporting {
-    height: 600px;
+    height: 700px;
     color: #616161 !important;
     text-align: center;
 }
 
 .supporting .container {
     position: relative;
-    margin: 50px auto;
     width: 90%;
 }
 
 .supporting img {
     height: 100px;
     margin: 40px 30px 10px 30px;
+}
+
+.supporting h1 {
+    color: #333 !important;
+    margin: 60px 10px 0!important;
+    font-weight: 300 !important;
 }
 
 .supporting p {
@@ -161,6 +173,10 @@ a:hover {
 .main .container {
     position: relative;
     width: 95%;
+}
+
+.main .col-md-4 {
+    position: relative;
 }
 
 .main h1 {
@@ -232,30 +248,10 @@ a:hover {
 }
 
 .footer h2 {
-    padding: 35px;
+    padding-top: 40px;
     color: #fff !important;
     text-transform: none;
     font-weight: 400 !important;
-}
-
-.footer .btn {
-    padding: 10px 60px !important;
-    background-color: none;
-    color: #fff !important;
-    font-size: 18px !important;
-    border: 2px solid #fff !important;
-    border-radius: 0px !important;
-}
-
-.btn:hover {
-    background-color: slategray;
-    color: #fff !important;
-}
-
-#clear-btn:hover {
-    background-color: slategray;
-    border: 2px solid slategray;
-    color: #fff !important;
 }
 
 .footer p {
