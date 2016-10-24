@@ -202,8 +202,8 @@ CSS Settings For Main Section
 .image-wrapper {
     position: relative;
     height: 350px;
-    width: 0%;
-    margin: 0 auto;
+    width: 350px;
+    margin: 0;
     border-radius: 100%;
     overflow: hidden;
     transition: all 300ms ease-out;
@@ -220,7 +220,7 @@ CSS Settings For Main Section
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 0;
+    padding: 20px 40px;
     background-color: rgba(39,24,38,.8);
     color: #fff;
     display: none;
@@ -232,12 +232,10 @@ CSS Settings For Main Section
 
 .image-wrapper .image-overlay .content {
     position: absolute;
-    top: 44%;
-    left: 40%;
+    top: 0;
+    left: 0;
     font: 500 16px/1.2 'Helvetica', sans-serif;
-    width: 240px;
-    margin-top: -60px;
-    margin-left: -75px;
+    width: 100%;
 }
 /* kitten end*/
 
