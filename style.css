@@ -203,15 +203,15 @@ CSS Settings For Main Section
     position: relative;
     height: 350px;
     width: 350px;
-    margin: 0;
+    margin: 10;
     border-radius: 100%;
     overflow: hidden;
     transition: all 300ms ease-out;
 }
 
 .image-wrapper img {
-    height: 100%;
-    width: 100%;
+    height: 350px;
+    width: 350px;
 }
 
 .image-wrapper .image-overlay {
@@ -232,10 +232,10 @@ CSS Settings For Main Section
 
 .image-wrapper .image-overlay .content {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 20%;
+    left: 10%;
     font: 500 16px/1.2 'Helvetica', sans-serif;
-    width: 100%;
+    width: 80%;
 }
 /* kitten end*/
 
