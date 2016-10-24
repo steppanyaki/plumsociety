@@ -198,7 +198,52 @@ CSS Settings For Main Section
     cursor: pointer;
 }
 
-.hover-text {
+/*kitten begin */
+.image-wrapper {
+    position: relative;
+    height: 350px;
+    width: 0%;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: all 300ms ease-out;
+}
+
+.image-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-wrapper .image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    background-color: rgba(39,24,38,.8);
+    color: #fff;
+    display: none;
+}
+
+.image-wrapper:hover .image-overlay {
+    display: block;
+}
+
+.image-wrapper .image-overlay .content {
+    position: absolute;
+    top: 44%;
+    left: 40%;
+    font: 500 16px/1.2 'Helvetica', sans-serif;
+    width: 240px;
+    margin-top: -60px;
+    margin-left: -75px;
+}
+/* kitten end*/
+
+/*.hover {
+    display: none;
+    position: relative;
     width: 334px;
     height: 334px;
     background: #271826;
@@ -213,14 +258,14 @@ CSS Settings For Main Section
    -webkit-transition: opacity .25s ease-in-out;
 }
 
-.hover-text p {
+.hover p {
     text-align: center !important;
     font-weight: 600;
     margin: 40px 20px;
     padding: 0 !important;
 }
 
-.hover-text:hover { opacity: .9 }
+.hover:hover { opacity: .9 }
 
 #stacey {
     height: 341px;
@@ -234,7 +279,7 @@ CSS Settings For Main Section
     width: 330px;
     margin: 2px 2px;
 }
-
+*/
 .main p {
     color: #fff;
     padding: 0 20px;
@@ -244,7 +289,7 @@ CSS Settings For Main Section
 CSS Settings For Footer Section
 ------------------------------------------------*/
 .footer {
-    height: 300px;
+    height: 500px;
     width: 100%;
     margin: -20px 0px;
     background-color: #333;
@@ -265,61 +310,10 @@ CSS Settings For Footer Section
     margin: 60px 10px 0;
 }
 
-/*----------------------------------------------
-CSS Settings For HTML Div ExactCenter
-------------------------------------------------*/
-h3,p,label {
-    text-align:center;
-    font-family:'Raleway',sans-serif;
-    color:#006400
+.form {
+    width: 200px;
+    background-color: red;
 }
-h2 {
-    font-family:'Raleway',sans-serif
-}
-input {
-    width:100%;
-    margin-bottom:20px;
-    padding:5px;
-    height:30px;
-    box-shadow:1px 1px 12px gray;
-    border-radius:3px;
-    border:none
-}
-textarea {
-    width:100%;
-    height:80px;
-    margin-top:10px;
-    padding:5px;
-    box-shadow:1px 1px 12px gray;
-    border-radius:3px
-}
-#send {
-    width:103%;
-    height:45px;
-    margin-top:40px;
-    border-radius:3px;
-    background-color:#cd853f;
-    border:1px solid #fff;
-    color:#fff;
-    font-family:'Raleway',sans-serif;
-    font-size:18px
-}
-div#feedback {
-    text-align:center;
-    height:520px;
-    width:330px;
-    padding:20px 25px 20px 15px;
-    background-color:#f3f3f3;
-    border-radius:3px;
-    border:1px solid #cd853f;
-    font-family:'Raleway',sans-serif;
-    float:left
-}
-.container {
-    width:960px;
-    margin:40px auto
-}
-
 .copyright {
     margin: 0 50px;
     text-align: right;
