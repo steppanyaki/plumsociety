@@ -255,20 +255,13 @@ CSS Settings For Footer Section
     font-weight: 400 !important;
 }
 
-.footer p {
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 80px;
-}
-
 #sa_contactdiv {
     margin: 30px 500px;
     text-align: left;
     color: #fff;
 }
 
-input, select, textarea {
+input, textarea {
     width: 450px;
     margin: 5px 0 !important;
     line-height: 1.6 !important;
@@ -277,6 +270,7 @@ input, select, textarea {
 }
 
 #form-btn {
+    position: relative;
     text-align: center;
     padding: 10px 30px;
     background-color: #7C6784;
@@ -290,6 +284,13 @@ input, select, textarea {
     background-color: #b0acaa !important;
 }
 
+.footer p {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
 .copyright {
     margin: 0 50px;
     text-align: right;
@@ -300,46 +301,39 @@ input, select, textarea {
 
 
 @media(max-width:767px) and (min-width: 320px) {
-    html, body {
-        margin: 0;
-        padding: 0;
+    h1 {
+        font-size: 28px !important;
     }
-    header {
-        margin: 0;
+    h2 {
+        font-size: 25px !important;
+        margin: 5px 0 !important;
+    }
+    h3 {
+        font-size: 20px !important;
+        text-align: center !important;
+    }
+    h4 {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    p {
+        font-size: 15px;
+        padding: 5px !important;
+        text-align: justify;
+    }
+    
+    .logo {
         position: relative;
+        left: -80px;
+        margin: 10px 0;
+        height: 35px;
     }
     .wrapper {
-        width: 100%
-    }
-    /*
-    .burger-nav {
+        position: relative;
+        text-align: center;
         margin: auto;
-        background: url(images/burger.svg) no-repeat 98% top;
-        cursor: pointer;
+        width: 90%;
     }
-    header nav {
-        position: relative;
-        width: 100%;
-        right: -90px;
-    }
-    header nav ul {
-        position: relative;
-        margin: 10px 0;
-        overflow: hidden;
-    }
-    header nav ul.open{
-        height: auto;
-    }
-    header nav ul li {
-        background: linear-gradient(rgba(124,103,132,.9), rgba(124,103,132,.9));
-        border-bottom: 1px solid #cecece;
-        text-align: right;
-        font-size: 15px;
-        display: block;
-        padding: 10px;
-        font-weight: 200;
-    }*/
-    
     .jumbotron {
         position: absolute;
         height: 300px;
@@ -351,55 +345,70 @@ input, select, textarea {
         background-size: cover;
         background-position: center;
     }
-    
+    .jumbotron .container {
+        margin-right: 10px;
+    }
+    .jumbotron .container img {
+        height: 50px;
+        margin-top: -200px !important;
+    }
+    .jumbotron h5 {
+        font-size: 15px !important;
+        margin-top: -80px;
+    }
     .supporting {
-        height: 250px;
+        height: 400px;
         position: relative;
         top: 350px;
         z-index: -1;
     }
-    .supporting img {
-        margin: 40px 0 10px 0;
-        height: 80px;
-    }
-    
-    .supporting p {
-        margin: 0 -40px;
+    .supporting .container img {
+        height: 70px;
+        margin: 20px auto;
     }
     .main {
-        height: 3200px;
+        height: 2900px;
         position: relative;
         top: 1100px;
     }
     .main .container {
         position: relative;
-        width: 90%;
-        top: -600px;
+        top: -650px;
     }
-    
-    .main .row img {
+    .image-wrapper {
         height: 300px;
-        margin: 10px -50px;
-    }
-    .words {
-        height: 306px !important;
-        left: 40px;
+        width: 300px;
     }
     .main p {
-        padding: 0;
-        margin: 10px -20px;
-        text-align: center;
-        font-size: 14px;
-    }
-    .btn {
-        margin: 18px 0px;
+        width: 100%;
     }
     .footer {
-        height: 400px;
+        height: 600px;
         margin: 1100px 0;
+    }
+    .footer h2 {
+        width: 90% !important;
+        margin: 0 auto !important;
+    }
+    #sa_contactdiv {
+        margin: 20px 20px;
+        text-align: left;
+        color: #fff;
+    }
+    input, textarea {
+        width: 370px !important;
+        margin: 0 auto;
     }
     .footer p {
         text-align: center;
+        font-size: 12px;
+    }
+    #form-button {
+        margin: 0 100px !important;
+    }
+    .copyright {
+        font-size: 10px;
+        margin: 30px;
     }
 }
 
@@ -409,7 +418,3 @@ input, select, textarea {
   and (-webkit-min-device-pixel-ratio: 1) {
 
 }
-
-@media (max-width: 320px){}
-this would be for your mobile
-@media(max-width:767px) and (min-width: 320px){}
