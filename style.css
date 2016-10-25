@@ -59,15 +59,14 @@ header {
 .wrapper {
     position: relative;
     text-align: center;
-    margin: auto;
+    margin: 5px auto;
     width: 90%;
-    padding: 5px;
 }
 
 .logo {
     position: relative;
-    left: -100px;
-    height: 40px;
+    left: -150px;
+    height: 45px;
 }
 
 nav {
@@ -191,26 +190,20 @@ CSS Settings For Main Section
     margin: 30px 0;
 }
 
-.main img {
-    height: 350px;
-    padding: 0;
-    cursor: pointer;
-}
-
-/*kitten begin */
+/* Overlay Hover */
 .image-wrapper {
     position: relative;
     height: 350px;
     width: 350px;
-    margin: 10;
+    margin: 0;
+    cursor: pointer;
     border-radius: 100%;
     overflow: hidden;
-    transition: all 300ms ease-out;
+    z-index: 1;
 }
 
 .image-wrapper img {
-    height: 350px;
-    width: 350px;
+    height: 100%;
 }
 
 .image-wrapper .image-overlay {
@@ -222,71 +215,33 @@ CSS Settings For Main Section
     padding: 20px 40px;
     background-color: rgba(39,24,38,.8);
     color: #fff;
-    display: none;
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 
 .image-wrapper:hover .image-overlay {
-    display: block;
+    opacity: 1;
 }
 
 .image-wrapper .image-overlay .content {
     position: absolute;
-    top: 20%;
+    top: 28%;
     left: 10%;
     font: 500 16px/1.2 'Helvetica', sans-serif;
     width: 80%;
 }
-/* kitten end*/
+/* Overlay Hover */
 
-/*.hover {
-    display: none;
-    position: relative;
-    width: 334px;
-    height: 334px;
-    background: #271826;
-    position: absolute;
-    top: 18px;
-    left: 53px;
-    border-radius: 50%;
-    opacity: 0;
-    padding: 20px;
-    transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-}
-
-.hover p {
-    text-align: center !important;
-    font-weight: 600;
-    margin: 40px 20px;
-    padding: 0 !important;
-}
-
-.hover:hover { opacity: .9 }
-
-#stacey {
-    height: 341px;
-    width: 341px;
-    margin: -6px -4px !important;
-    
-}
-
-#steph {
-    height: 330px;
-    width: 330px;
-    margin: 2px 2px;
-}
-*/
 .main p {
     color: #fff;
-    padding: 0 20px;
-    text-align: left;
+    margin: 0 50px 0 20px;
+    text-align: justify;
 }
 /*----------------------------------------------
 CSS Settings For Footer Section
 ------------------------------------------------*/
 .footer {
-    height: 500px;
+    height: 560px;
     width: 100%;
     margin: -20px 0px;
     background-color: #333;
@@ -304,13 +259,39 @@ CSS Settings For Footer Section
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    margin: 60px 10px 0;
+    margin-top: 80px;
 }
 
-.form {
-    width: 200px;
-    background-color: red;
+#sa_contactdiv {
+    margin: 30px 500px;
+    text-align: left;
+    color: #fff;
 }
+
+input, select, textarea {
+    width: 450px;
+    margin: 5px 0 !important;
+    line-height: 1.6 !important;
+    background-color: #3c3c3c;
+    border: 2px solid #7C6784;
+}
+
+#form-btn {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    background-color: #7C6784; 
+    text-transform: uppercase; 
+    border: none; 
+    margin: 0 130px !important;
+    width: 200px !important;
+    font-weight: bold;
+}
+
+#form-btn:hover {
+    background-color: #b0acaa !important;
+}
+
 .copyright {
     margin: 0 50px;
     text-align: right;
