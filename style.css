@@ -278,14 +278,12 @@ input, select, textarea {
 
 #form-btn {
     text-align: center;
-    text-transform: uppercase;
     padding: 10px 30px;
-    background-color: #7C6784; 
-    text-transform: uppercase; 
+    background-color: #7C6784;
     border: none; 
     margin: 0 130px !important;
     width: 200px !important;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 #form-btn:hover {
