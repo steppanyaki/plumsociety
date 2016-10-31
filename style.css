@@ -131,7 +131,7 @@ CSS Settings For Jumbotron
     border: 1px solid #fff;
     padding: 8px 25px;
     color: #fff;
-    font: 100 12px/1 'Helvetica', sans-serif;
+    font: 400 12px/1 'Raleway', sans-serif;
     line-height: 3;
     color: #fff;
     text-decoration: none;
@@ -255,8 +255,7 @@ CSS Settings For Footer Section
     padding: 10px 50px;
     color: #fff !important;
     text-transform: none;
-    font-weight: 400 !important;
-    font-size: 18px !important;
+    font: 400 18px/10px 'Raleway', sans-serif !important;
 }
 
 
@@ -413,7 +412,7 @@ background-color: #b0acaa !important;
         letter-spacing: .px;
     }
     .footer h2 {
-        font-size: 30px !important;
+        font-size: 35px !important;
         margin: 50px;
     }
     .footer p {
