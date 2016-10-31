@@ -549,6 +549,10 @@ background-color: #b0acaa !important;
         left: 15%;
         width: 70%;
     }
+    .supporting h1,
+    .main h1 {
+        font-size: 50px !important;
+    }
     .main .row {
         margin: 90px;
     }
