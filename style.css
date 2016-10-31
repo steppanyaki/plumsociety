@@ -138,7 +138,7 @@ CSS Settings For Jumbotron
 }
 
 .jumbotron .connect {
-    margin-right: 90px;
+    margin-right: 80px;
 }
 
 .connect:hover {
@@ -233,6 +233,7 @@ CSS Settings For Main Section
 
 .main p {
     color: #fff;
+    text-align: justify;
 }
 
 
@@ -303,49 +304,202 @@ background-color: #b0acaa !important;
     text-align: right;
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-    .image-wrapper {
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        margin: auto;
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        cursor: pointer;
+@media (min-width: 640px) and (max-width: 767px) {
+    .jumbotron img {
+        height: 85px;
+        margin-right: 60px;
+        margin-top: 180px;
     }
-    .image-wrapper img {
-        height: 100%;
+    .jumbotron p {
+        font-size: 21px !important;
+        margin-right: 60px;
     }
-    .image-wrapper .image-overlay {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 20px 40px;
-        background-color: rgba(39, 24, 38, .8);
-        color: #fff;
-        opacity: 0;
-        transition: all .5s ease-in-out;
+    .jumbotron .connect {
+        margin-right: 100px !important;
     }
-    .image-wrapper:hover .image-overlay {
-        opacity: 1;
+    .connect {
+        font-size: 15px;
     }
-    .image-wrapper .image-overlay .content {
-        position: absolute;
-        top: 24%;
-        left: 10%;
-        width: 80%;
-        font: 500 15px/1.2 'Helvetica', sans-serif;
+    .footer h2 {
+        font-size: 20px !important;
     }
-    #stacey .image-wrapper {
-        position: absolute;
-        padding: 0;
+    .footer p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #copyright {
+        font-size: 12px;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) and (max-width: 969px) {
+    .jumbotron {
+        height: 550px;
+    }
+    .jumbotron img {
+        height: 100px;
+        margin-right: 60px;
+        margin-top: 280px;
+    }
+    .jumbotron p {
+        font-size: 25px !important;
+        margin-right: 60px;
+    }
+    .jumbotron .connect {
+        margin-right: 120px !important;
+    }
+    .supporting p {
+        text-align: center;
+    }
+    .main .row {
+        margin: 40px 0;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .main p {
+        margin-left: 10px;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .footer h2 {
+        font-size: 22px !important;
+        margin: 30px auto;
+    }
+    .connect {
+        font-size: 15px;
+    }
+    .footer p {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1179px) {
+    .jumbotron {
+        height: 680px;
+    }
+    .jumbotron img {
+        height: 140px;
+        margin-top: 300px;
+        margin-right: 60px;
+    }
+    .jumbotron p {
+        font-size: 35px !important;
+        margin-right: 60px;
+    }
+    .jumbotron .connect {
+        font-size: 20px;
+        margin-right: 160px !important;
+        line-height: 4;
+    }
+    .supporting p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .main .row {
+        margin: 60px 15px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: auto;
+    }
+    .main p {
+        margin: auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .footer h2 {
+        font-size: 28px !important;
+        margin: 60px auto 50px auto;
+    }
+    .connect {
+        font-size: 16px;
+        padding: 13px 35px;
+    }
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1359px) {
+    .jumbotron {
+        height: 700px;
+    }
+    .jumbotron img {
+        height: 160px;
+        margin-top: 300px;
+        margin-right: 80px;
+    }
+    .jumbotron p {
+        font-size: 2.6em !important;
+        margin-right: 80px;
+        letter-spacing: 2px;
+    }
+    .jumbotron .connect {
+        margin-right: 210px !important;
+    }
+    .supporting p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .main .row {
+        margin: 90px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: auto;
+    }
+    .main p {
+        margin: auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .connect {
+        font-size: 18px;
+        padding: 14px 40px;
+        line-height: 4;
+    }
+    .footer h2 {
+        font-size: 28px !important;
+        margin: 50px auto 30px auto;
+    }
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1360px) {
     h1 {
         font-size: 40px !important;
     }
@@ -368,7 +522,7 @@ background-color: #b0acaa !important;
     .connect {
         font-size: 18px !important;
         padding: 15px 50px;
-        border: 2px solid #fff;
+        border: 1px solid #fff;
     }
     .connect:hover {
         border: 2px solid #7C6784;
@@ -402,10 +556,10 @@ background-color: #b0acaa !important;
     h4,
     p {
         text-align: left;
-        margin: 0 15px;
+        margin: auto 30px;
     }
     .main p {
-        margin: 0 15px;
+        margin: auto 30px;
         padding: 0;
         font-weight: 400;
         text-align: justify;
@@ -419,6 +573,7 @@ background-color: #b0acaa !important;
         margin-top: 70px;
         font-size: 18px;
         font-weight: 200;
+        letter-spacing: 1px;
     }
     #copyright {
         font-size: 15px;
