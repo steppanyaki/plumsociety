@@ -1,209 +1,216 @@
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
+
 /* Font Settings */
+
 h1 {
-    color: #fff !important;
-    text-transform: uppercase;
-    font-weight: 100 !important;
-    letter-spacing: 3px;
-    font-size: 50px !important;
-    text-align: center;
-    margin: 30px 0 !important;
+    font: 100 30px/2 'Raleway', sans-serif !important;
+    color: #333;
 }
 
 h2 {
     font-weight: 100 !important;
-    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 h3 {
     width: 100%;
-    margin: 20px;
-    text-align: left !important;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 3px;
-    font-size: 50px;
+    color: #333;
     text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 50px;
 }
 
 h4 {
-    margin: 20px;
     width: 100%;
-    text-align: left;
     color: #333;
+    text-align: center;
     font: 800 20px/1.5 'Raleway', sans-serif !important;
 }
 
 h5 {
-    font: 300 30px/1.5 'Raleway', sans-serif !important;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    font: 300 40px/1.5 'Helvetica', sans-serif !important;
 }
 
-p {
-    font: 100 16px Helvetica, sans-serif;
-}
-
-header {
+.affix-bottom {
     position: fixed;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(124,103,132,.9);
-    z-index: 1000;  
-}
-.wrapper {
-    position: relative;
-    text-align: center;
-    margin: 5px auto;
-    width: 90%;
+    border: 1px solid #333;
+    background-color: #7C6784;
+    height: 35px;
+    width: 50px;
+    z-index: 1000;
+    padding: 8px 10px;
+    font-weight: 500;
 }
 
-.logo {
-    position: relative;
-    left: -150px;
-    height: 45px;
-}
-
-nav {
-    float: right;
-}
-
-ul {
-    list-style: none;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 18px;
-    font-weight: 300;
-    padding: 6px 20px;
-}
-
-a {
-    color: #fff !important;
+.affix-bottom a {
+    color: #fff;
     text-decoration: none;
-    letter-spacing: 1px;
 }
 
-a:hover {
-    text-decoration: none !important;
-    color: #2c2c2c !important;
+
+/* HEADER BOOTSTRAP */
+
+.container-fluid {
+    background-color: rgba(124, 103, 132, .95);
 }
+
+#logo {
+    font: 100 2em/.8 'HelveticaNeue-Ultra-Light', 'Helvetica Neue Ultra Light', 'Helvetica Neue', 'Helvetica', sans-serif;
+    letter-spacing: 3px;
+    margin: auto;
+    color: #fff;
+}
+
+.navbar-default {
+    opacity: .6;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 100;
+}
+
+.navbar-text-color {
+    color: #fff;
+    font: 200 1.2em/.8 'HelveticaNeue-Ultra-Light', 'Helvetica Neue Ultra Light', 'Helvetica Neue', 'Helvetica', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar-text-color:hover {
+    color: #333;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border: none !important;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #9c8ca1 !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #9c8ca1 !important;
+}
+
+
+/* END HEADER BOOTSTRAP */
+
+
 /*----------------------------------------------
 CSS Settings For Jumbotron
 ------------------------------------------------*/
+
 .jumbotron {
-    height: 750px;
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url("images/cover.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.jumbotron .container {
     position: relative;
-    float: right;
-    height: 300px;
-    width: 50%;
-    margin: 230px 0 auto;
+    padding: 0 !important;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/cover.jpg);
+    background-size: cover;
+    background-position: center bottom;
     color: #fff;
-    font-family: 'Raleway', sans-serif !important;
+    height: 430px;
+    color: #fff !important;
+    text-align: right;
+    margin-top: -20px;
 }
+
 .jumbotron img {
-    height: 180px;   
+    position: relative;
+    height: 75px;
+    margin-top: 220px;
+    margin-right: 40px;
 }
 
-.btn {
-    padding: 10px 60px !important;
-    color: #fff !important;
-    font-size: 18px !important;
-    border: 2px solid #fff !important;
-    border-radius: 0px !important;
-    margin: 30px 160px;
-    background-color: none;
-    color: #fff !important;
-    text-transform: uppercase;
+.jumbotron p {
+    position: relative;
+    font: 100 18px/1 'Raleway', sans-serif !important;
+    letter-spacing: .5px;
+    text-align: right;
+    margin-right: 40px;
 }
 
-.btn:hover {
-    background-color: #7C6784;
-    color: #fff !important;
-    border: 2px solid #7C6784 !important;
+.connect {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 8px 25px;
+    color: #fff;
+    font: 100 12px/1 'Helvetica', sans-serif;
+    line-height: 3;
+    color: #fff;
+    text-decoration: none;
 }
+
+.jumbotron .connect {
+    margin-right: 90px;
+}
+
+.connect:hover {
+    background-color: #7C6784 !important;
+    text-decoration: none !important;
+    color: #fff;
+    border: 1px solid #7C6784;
+}
+
+
 /*----------------------------------------------
 CSS Settings For Supporting Section
 ------------------------------------------------*/
-.supporting {
-    height: 700px;
-    color: #616161 !important;
-    text-align: center;
-}
 
-.supporting .container {
-    position: relative;
-    width: 90%;
+.supporting {
+    height: auto;
+    margin-bottom: 40px;
+    padding-top: 30px;
 }
 
 .supporting img {
-    height: 85px;
     margin: 40px 30px 10px 30px;
+    height: 80px;
 }
 
-.supporting h1 {
-    color: #333 !important;
-    margin: 60px 10px 0!important;
-    font-weight: 200 !important;
-}
 
-#society {
-    padding: 15px 250px;
-}
-
-.supporting p {
-    padding: 15px;
-}
 /*----------------------------------------------
 CSS Settings For Main Section
 ------------------------------------------------*/
-.main {
-    height: 1500px;
-    width: 100%;   
-    background-image: linear-gradient(rgba(124,103,132,.8), rgba(124,103,132,.8)),url("images/main.jpg");
+
+.main-container {
+    height: auto;
+    width: auto !important;
+    background-image: linear-gradient(rgba(124, 103, 132, .8), rgba(124, 103, 132, .8)), url("images/main.jpg");
     background-position: center;
     background-size: cover;
-    padding: 40px 0;
-    text-align: center;
-}
-
-.main .container {
-    position: relative;
-    width: 95%;
+    margin: 0;
 }
 
 .main h1 {
-    margin: 50px 0 !important;
+    color: #fff !important;
 }
 
 .main .row {
     position: relative;
-    padding: 10px;
-    margin: 30px 0;
+    margin: 40px 0;
+    text-align: center;
 }
 
+
 /* Overlay Hover */
+
 .image-wrapper {
     position: relative;
-    height: 350px;
-    width: 350px;
-    margin: 0;
-    cursor: pointer;
-    border-radius: 100%;
-    overflow: hidden;
     z-index: 1;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 .image-wrapper img {
@@ -217,7 +224,7 @@ CSS Settings For Main Section
     bottom: 0;
     left: 0;
     padding: 20px 40px;
-    background-color: rgba(39,24,38,.8);
+    background-color: rgba(39, 24, 38, .8);
     color: #fff;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -229,201 +236,202 @@ CSS Settings For Main Section
 
 .image-wrapper .image-overlay .content {
     position: absolute;
-    top: 28%;
+    top: 24%;
     left: 10%;
-    font: 500 16px/1.2 'Helvetica', sans-serif;
     width: 80%;
+    font: 500 15px/1.2 'Helvetica', sans-serif;
 }
-/* Overlay Hover */
 
 .main p {
     color: #fff;
-    margin: 0 50px 0 20px;
-    text-align: justify;
 }
+
+
 /*----------------------------------------------
 CSS Settings For Footer Section
 ------------------------------------------------*/
+
 .footer {
-    height: 900px;
-    width: 100%;
-    margin: -20px 0px;
+    height: auto;
     background-color: #333;
     text-align: center;
 }
 
+.footer-container {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
 .footer h2 {
-    padding-top: 40px;
+    padding: 10px 50px;
     color: #fff !important;
     text-transform: none;
     font-weight: 400 !important;
+    font-size: 18px !important;
 }
 
+
+/*
 #sa_contactdiv {
-    margin: 30px 500px;
-    text-align: left;
-    color: #fff;
+margin: 30px 500px;
+text-align: left;
+color: #fff;
 }
 
 input, textarea {
-    width: 450px;
-    margin: 5px 0 !important;
-    line-height: 1.6 !important;
-    background-color: #3c3c3c;
-    border: 2px solid #7C6784;
+width: 450px;
+margin: 5px 0 !important;
+line-height: 1.6 !important;
+background-color: #3c3c3c;
+border: 2px solid #7C6784;
 }
 
 #form-btn {
-    position: relative;
-    text-align: center;
-    padding: 10px 30px;
-    background-color: #7C6784;
-    border: none; 
-    margin: 0 130px !important;
-    width: 200px !important;
-    font-weight: 500;
+position: relative;
+text-align: center;
+padding: 10px 30px;
+background-color: #7C6784;
+border: none; 
+margin: 0 130px !important;
+width: 200px !important;
+font-weight: 500;
 }
 
 #form-btn:hover {
-    background-color: #b0acaa !important;
+background-color: #b0acaa !important;
 }
+*/
 
 .footer p {
-    text-align: center;
+    margin-top: 40px;
     color: #fff;
+    text-align: center;
     text-transform: uppercase;
-    margin-top: 60px;
+    font-size: 12px;
 }
 
-.copyright {
-    margin: 0 50px;
+#copyright {
     text-align: right;
-    text-transform: uppercase;
-    color: #fff !important;
-    font-size: 15px;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .image-wrapper {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .image-wrapper img {
+        height: 100%;
+    }
+    .image-wrapper .image-overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px 40px;
+        background-color: rgba(39, 24, 38, .8);
+        color: #fff;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+    .image-wrapper:hover .image-overlay {
+        opacity: 1;
+    }
+    .image-wrapper .image-overlay .content {
+        position: absolute;
+        top: 24%;
+        left: 10%;
+        width: 80%;
+        font: 500 15px/1.2 'Helvetica', sans-serif;
+    }
+    #stacey .image-wrapper {
+        position: absolute;
+        padding: 0;
+    }
+}
 
-@media(max-width:767px) and (min-width: 320px) {
+@media (min-width: 1025px) {
     h1 {
-        font-size: 28px !important;
-    }
-    h2 {
-        font-size: 25px !important;
-        margin: 5px 0 !important;
-    }
-    h3 {
-        font-size: 20px !important;
-        text-align: center !important;
-    }
-    h4 {
-        font-size: 18px !important;
-        text-align: center;
+        font-size: 40px !important;
     }
     p {
-        font-size: 15px;
-        padding: 5px !important;
-        text-align: justify;
-    }
-    
-    .logo {
-        position: relative;
-        left: -80px;
-        margin: 10px 0;
-        height: 35px;
-    }
-    
-    .wrapper, header {
-        position: relative;
-        text-align: center;
-        margin: auto;
-        width: 100%;
+        font-size: 16px;
     }
     .jumbotron {
-        position: absolute;
-        height: 300px;
-        z-index: -1;
-        width: 100%;
-        top: 50px;
-        background-image:
-           linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),url(images/cover.jpg);
-        background-size: cover;
-        background-position: center;
+        height: 800px;
     }
-    .jumbotron .container {
-        margin-right: 10px;
+    .jumbotron img {
+        height: 180px;
+        margin-right: 100px;
+        margin-top: 300px;
     }
-    .jumbotron .container img {
-        height: 50px;
-        margin-top: -200px !important;
+    .jumbotron p {
+        font-size: 3em !important;
+        margin-right: 100px;
+        letter-spacing: 2px;
     }
-    .jumbotron h5 {
-        font-size: 15px !important;
-        margin-top: -80px;
+    .connect {
+        font-size: 18px !important;
+        padding: 15px 50px;
+        border: 2px solid #fff;
     }
-    .supporting {
-        height: 400px;
-        position: relative;
-        top: 350px;
-        z-index: -1;
+    .connect:hover {
+        border: 2px solid #7C6784;
     }
-    .supporting .container img {
-        height: 70px;
-        margin: 20px auto;
+    .jumbotron .connect {
+        margin-right: 260px;
+        line-height: 6;
     }
-    .main {
-        height: 2900px;
-        position: relative;
-        top: 1100px;
-    }
-    .main .container {
-        position: relative;
-        top: -650px;
+    .supporting p {
+        text-align: center;
     }
     .image-wrapper {
-        height: 300px;
-        width: 300px;
-        margin: 10px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 10px;
+        width: 360px;
+        height: 360px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .image-wrapper .image-overlay .content {
+        font-size: 18px;
+        left: 15%;
+        width: 70%;
+    }
+    .main .row {
+        margin: 90px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: 0 15px;
     }
     .main p {
-        width: 100%;
-    }
-    .footer {
-        height: 600px;
-        margin: 1100px 0;
+        margin: 0 15px;
+        padding: 0;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
     }
     .footer h2 {
-        width: 90% !important;
-        margin: 0 auto !important;
-    }
-    #sa_contactdiv {
-        margin: 20px 20px;
-        text-align: left;
-        color: #fff;
-    }
-    input, textarea {
-        width: 370px !important;
-        margin: 0 auto;
+        font-size: 30px !important;
+        margin: 50px;
     }
     .footer p {
-        text-align: center;
-        font-size: 12px;
+        margin-top: 70px;
+        font-size: 18px;
+        font-weight: 200;
     }
-    #form-button {
-        margin: 0 100px !important;
+    #copyright {
+        font-size: 15px;
     }
-    .copyright {
-        font-size: 10px;
-        margin: 30px;
-    }
-}
-
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-      .wrapper {
-          width: 100%;
-          
-      }
 }
