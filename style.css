@@ -38,26 +38,6 @@ h5 {
     font: 300 40px/1.5 'Helvetica', sans-serif !important;
 }
 
-.affix-bottom {
-    position: fixed;
-    border: 1px solid #ccc;
-    background-color: #7C6784;
-    height: 35px;
-    width: 50px;
-    z-index: 1000;
-    padding: 8px 10px;
-    font-weight: 500;
-}
-
-.affix-bottom a {
-    color: #fff;
-}
-
-.affix-bottom a:hover {
-    color: #333;
-    text-decoration: none;
-}
-
 
 /* HEADER BOOTSTRAP */
 
