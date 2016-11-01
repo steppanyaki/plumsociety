@@ -120,8 +120,8 @@ CSS Settings For Jumbotron
 
 .jumbotron p {
     position: relative;
-    font: 100 18px/1 'Raleway', sans-serif !important;
-    letter-spacing: .5px;
+    font: 400 10px/3 'Raleway', sans-serif !important;
+    letter-spacing: 2.8px;
     text-align: right;
     margin-right: 40px;
 }
@@ -131,10 +131,11 @@ CSS Settings For Jumbotron
     border: 1px solid #fff;
     padding: 8px 25px;
     color: #fff;
-    font: 400 12px/1 'Raleway', sans-serif;
+    font: 300 9px/1 'Raleway', sans-serif;
     line-height: 3;
     color: #fff;
     text-decoration: none;
+    letter-spacing: 2px;
 }
 
 .jumbotron .connect {
@@ -142,10 +143,11 @@ CSS Settings For Jumbotron
 }
 
 .connect:hover {
-    background-color: #7C6784 !important;
+    background-color: rgba(255, 255, 255, .3) !important;
+    !important;
     text-decoration: none !important;
     color: #fff;
-    border: 1px solid #7C6784;
+    border: 1px solid #fff;
 }
 
 
@@ -179,7 +181,7 @@ CSS Settings For Main Section
 }
 
 .main h1 {
-    color: #fff !important;
+    color: #fff;
 }
 
 .main .row {
@@ -256,7 +258,7 @@ CSS Settings For Footer Section
     padding: 10px 50px;
     color: #fff !important;
     text-transform: none;
-    font: 400 18px/10px 'Raleway', sans-serif !important;
+    font: 400 18px/1.3 'Raleway', sans-serif !important;
 }
 
 
@@ -311,14 +313,14 @@ background-color: #b0acaa !important;
         margin-top: 180px;
     }
     .jumbotron p {
-        font-size: 21px !important;
+        font-size: 12px !important;
         margin-right: 60px;
     }
     .jumbotron .connect {
-        margin-right: 100px !important;
+        margin-right: 110px !important;
     }
     .connect {
-        font-size: 15px;
+        font-size: 10px;
     }
     .footer h2 {
         font-size: 20px !important;
@@ -342,11 +344,11 @@ background-color: #b0acaa !important;
         margin-top: 280px;
     }
     .jumbotron p {
-        font-size: 25px !important;
+        font-size: 15px !important;
         margin-right: 60px;
     }
     .jumbotron .connect {
-        margin-right: 120px !important;
+        margin-right: 130px !important;
     }
     .supporting p {
         text-align: center;
@@ -373,7 +375,7 @@ background-color: #b0acaa !important;
         margin: 30px auto;
     }
     .connect {
-        font-size: 15px;
+        font-size: 12px;
     }
     .footer p {
         font-size: 14px;
@@ -395,12 +397,11 @@ background-color: #b0acaa !important;
         margin-right: 60px;
     }
     .jumbotron p {
-        font-size: 35px !important;
+        font-size: 23px !important;
         margin-right: 60px;
     }
     .jumbotron .connect {
-        font-size: 20px;
-        margin-right: 160px !important;
+        margin-right: 170px !important;
         line-height: 4;
     }
     .supporting p {
@@ -429,7 +430,7 @@ background-color: #b0acaa !important;
         margin: 60px auto 50px auto;
     }
     .connect {
-        font-size: 16px;
+        font-size: 15px;
         padding: 13px 35px;
     }
     .footer p {
@@ -448,16 +449,16 @@ background-color: #b0acaa !important;
     }
     .jumbotron img {
         height: 160px;
-        margin-top: 300px;
+        margin-top: 260px;
         margin-right: 80px;
     }
     .jumbotron p {
-        font-size: 2.6em !important;
+        font-size: 2em !important;
         margin-right: 80px;
         letter-spacing: 2px;
     }
     .jumbotron .connect {
-        margin-right: 210px !important;
+        margin-right: 180px !important;
     }
     .supporting p {
         font-size: 16px;
@@ -515,7 +516,7 @@ background-color: #b0acaa !important;
         margin-top: 300px;
     }
     .jumbotron p {
-        font-size: 3em !important;
+        font-size: 2.3em !important;
         margin-right: 100px;
         letter-spacing: 2px;
     }
@@ -524,11 +525,8 @@ background-color: #b0acaa !important;
         padding: 15px 50px;
         border: 1px solid #fff;
     }
-    .connect:hover {
-        border: 2px solid #7C6784;
-    }
     .jumbotron .connect {
-        margin-right: 260px;
+        margin-right: 240px;
         line-height: 6;
     }
     .supporting p {
