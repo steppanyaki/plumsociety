@@ -72,17 +72,25 @@ h5 {
     letter-spacing: 2px;
 }
 
-.navbar-text-color:hover {
-    color: #333;
-}
-
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
     border: none !important;
+    font-size: 10px;
 }
 
 .navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
+    background-color: #9c8ca1 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
     background-color: #9c8ca1 !important;
 }
 
@@ -113,14 +121,14 @@ CSS Settings For Jumbotron
 
 .jumbotron img {
     position: relative;
-    height: 75px;
+    height: 65px;
     margin-top: 220px;
     margin-right: 40px;
 }
 
 .jumbotron p {
     position: relative;
-    font: 400 10px/3 'Raleway', sans-serif !important;
+    font: 200 8px/2 'Raleway', sans-serif !important;
     letter-spacing: 2.8px;
     text-align: right;
     margin-right: 40px;
@@ -129,9 +137,9 @@ CSS Settings For Jumbotron
 .connect {
     position: relative;
     border: 1px solid #fff;
-    padding: 8px 25px;
+    padding: 6px 20px;
     color: #fff;
-    font: 300 9px/1 'Raleway', sans-serif;
+    font: 300 7px/1 'Raleway', sans-serif;
     line-height: 3;
     color: #fff;
     text-decoration: none;
@@ -139,7 +147,7 @@ CSS Settings For Jumbotron
 }
 
 .jumbotron .connect {
-    margin-right: 80px;
+    margin-right: 70px;
 }
 
 .connect:hover {
@@ -340,15 +348,15 @@ background-color: #b0acaa !important;
     }
     .jumbotron img {
         height: 100px;
-        margin-right: 60px;
-        margin-top: 280px;
+        margin-right: 90px;
+        margin-top: 240px;
     }
     .jumbotron p {
         font-size: 15px !important;
-        margin-right: 60px;
+        margin-right: 90px;
     }
     .jumbotron .connect {
-        margin-right: 130px !important;
+        margin-right: 150px !important;
     }
     .supporting p {
         text-align: center;
@@ -392,16 +400,16 @@ background-color: #b0acaa !important;
         height: 680px;
     }
     .jumbotron img {
-        height: 140px;
+        height: 120px;
         margin-top: 300px;
-        margin-right: 60px;
+        margin-right: 100px;
     }
     .jumbotron p {
-        font-size: 23px !important;
-        margin-right: 60px;
+        font-size: 19px !important;
+        margin-right: 100px;
     }
     .jumbotron .connect {
-        margin-right: 170px !important;
+        margin-right: 190px !important;
         line-height: 4;
     }
     .supporting p {
@@ -430,7 +438,7 @@ background-color: #b0acaa !important;
         margin: 60px auto 50px auto;
     }
     .connect {
-        font-size: 15px;
+        font-size: 12px;
         padding: 13px 35px;
     }
     .footer p {
@@ -508,17 +516,17 @@ background-color: #b0acaa !important;
         font-size: 16px;
     }
     .jumbotron {
-        height: 800px;
+        height: 700px;
     }
     .jumbotron img {
         height: 180px;
         margin-right: 100px;
-        margin-top: 300px;
+        margin-top: 230px;
     }
     .jumbotron p {
-        font-size: 2.3em !important;
+        font-size: 2em !important;
         margin-right: 100px;
-        letter-spacing: 2px;
+        letter-spacing: 4px;
     }
     .connect {
         font-size: 18px !important;
@@ -526,7 +534,7 @@ background-color: #b0acaa !important;
         border: 1px solid #fff;
     }
     .jumbotron .connect {
-        margin-right: 240px;
+        margin-right: 230px;
         line-height: 6;
     }
     .supporting p {
@@ -579,5 +587,21 @@ background-color: #b0acaa !important;
     }
     #copyright {
         font-size: 15px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .jumbotron {
+        height: 900px;
+    }
+    .jumbotron img {
+        margin-top: 380px;
+    }
+    .jumbotron img,
+    .jumbotron p {
+        margin-right: 200px;
+    }
+    .jumbotron .connect {
+        margin-right: 330px;
     }
 }
