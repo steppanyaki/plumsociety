@@ -253,10 +253,11 @@ CSS Settings For Validation Section
 
 .validation {
     text-align: center;
+    margin: 40px;
 }
 
 .validation img {
-    height: 30px;
+    height: 50px;
     margin: 20px;
 }
 
@@ -342,7 +343,7 @@ background-color: #b0acaa !important;
         margin-right: 110px !important;
     }
     .validation img {
-        height: 40px;
+        height: 50px;
         margin: 30px;
     }
     .connect {
@@ -397,9 +398,9 @@ background-color: #b0acaa !important;
         letter-spacing: .px;
     }
     .validation img {
-        height: 50px;
-        margin: 30px;
-    }
+    height: 50px;
+    margin: 30px;
+}
     .footer h2 {
         font-size: 22px !important;
         margin: 30px auto;
