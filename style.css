@@ -38,6 +38,11 @@ h5 {
     font: 300 40px/1.5 'Helvetica', sans-serif !important;
 }
 
+h6 {
+    letter-spacing: px;
+    font: 500 20px/1.5 'Raleway', sans-serif !important;
+}
+
 
 /* HEADER BOOTSTRAP */
 
@@ -160,7 +165,7 @@ CSS Settings For Jumbotron
 
 
 /*----------------------------------------------
-CSS Settings For Supporting Section
+CSS Settings For Wedo Section
 ------------------------------------------------*/
 
 .supporting {
@@ -248,6 +253,23 @@ CSS Settings For Main Section
 
 
 /*----------------------------------------------
+CSS Settings For Services Section
+------------------------------------------------*/
+
+.services .row p {
+    text-align: center;
+}
+
+.services .row {
+    margin: 80px 0;
+}
+
+.services .row .col p {
+    margin: 0 20px;
+}
+
+
+/*----------------------------------------------
 CSS Settings For Validation Section
 ------------------------------------------------*/
 
@@ -329,7 +351,7 @@ background-color: #b0acaa !important;
     text-align: right;
 }
 
-@media (min-width: 640px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
     .jumbotron img {
         height: 85px;
         margin-right: 60px;
@@ -358,6 +380,15 @@ background-color: #b0acaa !important;
     }
     #copyright {
         font-size: 12px;
+    }
+    .services .row {
+        margin: 0;
+    }
+    .services .row .col {
+        margin: 20px 0;
+    }
+    .services .row .col h6 {
+        margin: 10px 60px;
     }
 }
 
@@ -398,9 +429,9 @@ background-color: #b0acaa !important;
         letter-spacing: .px;
     }
     .validation img {
-    height: 50px;
-    margin: 30px;
-}
+        height: 50px;
+        margin: 30px;
+    }
     .footer h2 {
         font-size: 22px !important;
         margin: 30px auto;
