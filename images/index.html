@@ -1,107 +1,273 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel='stylesheet' href='style.css'/>
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
-        <script type='text/javascript' src="script.js"></script>
-    </head>
 
-    <body>
-        
-        <header>
-            <div class="wrapper">
-                <img class="logo" src="images/logo.png">
-                <nav>
-                    <a class="burger-nav"></a>
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT US</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        
-        
-        <div class="jumbotron">
-            <div class="container">
-                <img src="images/bright_ideas.png">
-                <p>we shine light on innovation</p>
-                <a class="btn" href="">Learn More</a>
-            </div>    
-        </div>
-        
-        
-        <div class="supporting">
-            <div class="container">
-                <div class="col-sm-4 col-xs-12">
-                    <img src="images/flag.svg">
-                    <h1>Our Mission</h1>
-                    <p>We are on a mission to create <strong>Plum</strong> products that are revolutionary to your day-to-day</p>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img src="images/plum.svg">
-                    <h1>The Society</h1>
-                    <p>Team Plum is a <strong>society</strong> of enterprising female entrepreneurs with a passion for creative products. We are driven by seeing everyday ideas come to life; especially those with a focus on simplicity, style, and fun. The questions "why not?" and "how can we make things happen?" are always top of mind.</p>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img src="images/innovation.svg">
-                    <h1>The Bio</h1>
-                    <p>Our team has a track record of innovating, launching, and building successful brands. <br>Learn more.</p>
-                </div>
-            </div>
-        </div>
-        
-        
-        <div class="main">
-            <div class="container">
-                <h1>- Nice to meet you -</h1>
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <img src="images/julie.png">
-                        <div class="hover-text"><p><br>"I love to launch new products and collaborate on innovative ideas. I find the fun in looking at everyday consumer items from a different angle and love to learn from conversing with people. I'm passionate about figuring out what motivates consumers to seek, purchase and become raving fans of brands and products."</p></div>
-                    </div>
-                    <div class="col-sm-8 col-xs-12">
-                        <p><span>Julie Galich</span><br><span2> Sales / Marketing</span2><br>Julie is a marketing and media professional with over 18 years' experience helping clients define media objectives and delivering strategic marketing plans that drive sales. She has directed media, promotional, and marketing programs for Fortune 500 clients in a variety of industries including: QSR, fast casual, healthcare, consumer products, beverage, automotive, tourism and hospitality, and telecommunications.
-                        <br><br>Julie has successfully led cross-functional partners, advertising agencies, and franchisees to develop high performing national and local marketing programs. She has significant experience creating, testing, and launching new products and brands.<br><br>Julie is recognized as a media all-star by MediaWeek publication, received the Y&R "Rising Star" award, has earned the AT+T account leadership designation, was awarded the promotional planning and execution award for an account with billings in excess of $30 million in 2006, and received the <em>Marketer of the Year</em> award from Focus Brands in 2014.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-4 pull-right">
-                        <img src="images/stacey.png">
-                        <div class="hover-text" id="stacey"><p><br>"I love to launch new products and collaborate on innovative ideas. I find the fun in looking at everyday consumer items from a different angle and love to learn from conversing with people. I'm passionate about figuring out what motivates consumers to seek, purchase and become raving fans of brands and products."</p></div>
-                    </div>
-                    <div class="col-xs-12 col-md-8 pull-left">
-                        <p><span>Stacey Kirsch</span><br><span2>product / distribution</span2><br>Stacey is an experienced entrepreneur recognized for developing her own the first-to-market consumer footwear product, Flexflop.  In this business she built a product from scratch, overseeing every component from design to manufacturing to marketing. She identified multiple ways to monetize the product, devising strategies that ultimately resulted in A-list celebrity endorsements and front-page press in celebrated magazines such as People, Life & Style, Self, Reader’s Digest.  Stacey also appeared on The Big Idea "Minute to Millions" with Donny Deutsch. This behind-the-scenes perspective has not only sharpened her business acumen, but it’s helped her understand how to elevate and sustain a brand within multiple national and international markets.
+<head>
+    <link rel='stylesheet' href='style.css' />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="js/bootstrap.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.1.js'></script>
+    <script type='text/javascript' src="js/script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plum Society</title>
+</head>
 
-                        Stacey is also an award-winning marketer with a proven track record of creating unique sustainable brands from the ground up and driving their growth.  She has worked on a variety of products including beauty, fashion, personal care, supplements, real-estate and technology.  Her ability to target audiences has transformed sales and global reach for numerous companies. In her recent role at one of the fastest growing technology firms in the country, she was instrumental in growing a software brand from its beginning stages all the way through acquisition.  As part of the companies' leadership, she identified ways to strengthen B2B relationships, redesign the partner program and establish partners in 27 countries.   In this role she received the Channel Chiefs award and the Woman of Channel Award from CRN magazine.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-xs-12">
-                        <img src="images/Stephanie.png">
-                        <div class="hover-text" id="steph"><p><br>"I love to launch new products and collaborate on innovative ideas. I find the fun in looking at everyday consumer items from a different angle and love to learn from conversing with people. I'm passionate about figuring out what motivates consumers to seek, purchase and become raving fans of brands and products."</p></div>
-                    </div>
-                    <div class="col-sm-8 col-xs-12">
-                        <p><span>Stephanie Houng</span>
-                        <br>
-                        <span2>operations / finance / Tech</span2><br>
-                        After founding and managing a media marketing consultancy in Asia working with the likes of Disney and Toyota for 7 years, Stephanie returned to the US to obtain an MBA degree at Cornell University to augment her marketing and business acumen. In combining her digital marketing and operational experience as well as entrepreneurial spirit and self-taught coding skills, Stephanie aims to help build and realize successful enterprises. After founding and managing a media marketing consultancy in Asia working with the likes of Disney and Toyota for 7 years, Stephanie returned to the US to obtain an MBA degree at Cornell University to augment her marketing and business acumen. In combining her digital marketing and operational experience as well as entrepreneurial spirit and self-taught coding skills, Stephanie aims to help build and realize successful enterprises.</p>
-                    </div>
-                </div>
+<body>
+
+    <!-- BEGIN HEADER -->
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" id="logo" href="#">PLUM SOCIETY</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#home"><span class="navbar-text-color">HOME</span></a></li>
+                    <li><a href="#wedo"><span class="navbar-text-color">WHAT WE DO</span></a></li>
+                    <li><a href="#about"><span class="navbar-text-color">ABOUT</span></a></li>
+                    <li><a href="#services"><span class="navbar-text-color">SERVICES</span></a></li>
+                    <li><a href="#contact"><span class="navbar-text-color">CONTACT US</span></a></li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- END HEADER -->
+
+    <!-- BEGIN JUMBO !-->
+    <div class="jumbotron" id="home">
+        <img src="images/bright_ideas.svg" alt="Bright Ideas">
+        <p>WE SHINE LIGHT ON INNOVATION</p>
+        <a class="connect" href="mailTo:stephanie@plumsociety.com">CONNECT WITH US</a>
+    </div>
+
+    <!-- END JUMBO !-->
+
+    <!-- BEGIN WEDO !-->
+    <div class="container text-center supporting" id="wedo">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+                <h1>WHAT WE DO</h1>
+                <p id="society">Plum Society develops true partnerships with brands, designers, entrepreneurs, and category disruptors. We are on a mission to create, collaborate and bring one-of-a-kind products to market. While we work with a wide range of brands and consumer products, we continually seek out those that explore a new way of thinking; be it design, customer experience, or unique product attributes. Bringing ease, fun, and function to more people is in our DNA– it’s why we always strive to shine a light on the world’s bright ideas.</p>
             </div>
         </div>
-        <div class="footer">
-            <h2>Interested in Learning More?</h2>
-                <a href="#" class="btn">Drop Us a Line</a>
-                <a href="#" class="btn" id="clear-btn">Give Us a Ring</a>
-            <p>&copy; Plum Society</p>
+        <hr>
+        <div class="col-sm-4 col-xs-12">
+            <img src="images/innovation.svg" alt="lightbulb">
+            <h2>THE LIGHT</h2>
+            <p>The goal of Plum Society is to seek out innovative brands wherever they may be... whether it's on a cocktail napkin or across the world. We are on a mission to create, collaborate, and bring to market products that revolutionize your everyday life. </p>
         </div>
-    </body>
+        <div class="col-sm-4 col-xs-12">
+            <img src="images/plum.svg" alt="plum">
+            <h2>THE SOCIETY</h2>
+            <p>Team Plum is a society of enterprising female entrepreneurs with a passion for creative products. We are driven by seeing everyday ideas come to life; especially those with a focus on simplicity, style, and fun. The questions "why not?" and "how can we make things happen?" are always top of mind.</p>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+            <img src="images/why.svg" alt="pestle">
+            <h2>THE WHY</h2>
+            <p>Our team has a track record of innovating, launching, and building successful brands. We are sales and marketing experts with a deep understanding of how to deliver a product to consumers. We leverage established relationships and multiple distribution channels to increase speed to market and success.</p>
+        </div>
+    </div>
+    <!-- END WEDO !-->
+
+    <!-- BEGIN MAIN !-->
+    <div class="container main main-container" id="about">
+        <div class="row">
+            <h1>NICE TO MEET YOU</h1>
+        </div>
+        <div class="row " id="julie">
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+                <div class="image-wrapper">
+                    <span class="image-overlay">
+                          <span class="content">❝ I find the fun in looking at everyday consumer items from a different angle and love to learn from conversing with people. I'm passionate about figuring out what motivates consumers to seek, purchase and become raving fans of brands and products. ❞</span>
+                    </span>
+                    <img src="images/julie.png" alt="Julie">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                <h3>JULIE GALICH</h3>
+                <h4>sales / marketing</h4>
+                <p>Julie is a marketing and media professional with over 18 years' experience helping clients define media objectives and delivering strategic marketing plans that drive sales. She has directed media, promotional, and marketing programs for Fortune 500 clients in a variety of industries including: QSR, fast casual, healthcare, consumer products, beverage, automotive, tourism and hospitality, and telecommunications.
+                    <br>
+                    <br>Julie has successfully led cross-functional partners, advertising agencies, and franchisees to develop high performing national and local marketing programs. She has significant experience creating, testing, and launching new products and brands.
+                    <br>
+                    <br>Julie is recognized as a media all-star by MediaWeek publication, received the Y&R "Rising Star " award, has earned the AT+T account leadership designation, was awarded the promotional planning and execution award for an account with billings in excess of $30 million in 2006, and received the <em>Marketer of the Year</em> award from Focus Brands in 2014.
+                </p>
+            </div>
+        </div>
+        <div class="row " id="stacey">
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12 pull-right ">
+                <div class="image-wrapper">
+                    <span class="image-overlay">
+                              <span class="content">❝ I launched a startup before it was cool because you get to be creative everyday. I am passionate about bringing new ideas to market and blazing a path with great products. ❞</span>
+                    </span>
+                    <img src="images/stacey.png" alt="Stacey">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12 pull-left">
+                <h3>STACEY KIRSCH</h3>
+                <h4>product / distribution</h4>
+                <p>Stacey is an experienced entrepreneur recognized for developing her own first-to-market consumer footwear product, Flexflop. This product, which Stacey singly brought from concept to design to production, garnered A-list celebrity endorsements and was featured on major magazines such as People, Life & Style, Self, Reader’s Digest. Stacey also appeared on The Big Idea "Minute to Millions " with Donny Deutsch.
+                    <br>
+                    <br> Stacey is also an award-winning marketer with a proven track record of building high-growth brands from the ground up and has worked on a variety of product categories, including beauty, fashion, personal care, supplements, real-estate and technology. In her recent role at one of the fastest growing technology firms in the country, she was instrumental in growing a software brand from its beginning stages, launching it in 27 countries and guiding it through acquisition. She received the Channel Chiefs award and the Woman of Channel Award from CRN magazine.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row " id="steph">
+            <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12">
+                <div class="image-wrapper">
+                    <span class="image-overlay">
+                      <span class="content ">❝ I like to think of myself as a builder at heart. I always get excited about the opportunity to build something from the ground up, working on all aspects of a business, and  getting my hands dirty. I'm most inspired and energized by great innovation and style. ❞</span>
+                    </span>
+                    <img src="images/stephanie.png" alt="Stephanie">
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                <h3>STEPHANIE HOUNG</h3>
+                <h4>operations / ecommerce / tech</h4>
+                <p>Stephanie started out as a professional voice artist in Asia and eventually built her personal brand into a media marketing consultancy, working with the likes of Disney and Toyota. Stephanie has an MBA degree at Cornell University, which she used as a launch pad to discover her business interests. She has conducted market research at a major healthcare company, and led cross-functional teams and client engagements at a NYC-based digital marketing agency. More recently, Stephanie has consulted on the operations and logistics for numerous successful ecommerce businesses.
+                    <br>
+                    <br>The range of experience from the divergent paths Stephanie has taken eventually culminated into her getting involved with helping multiple startups from the seed stage, where her ability to wear many hats and leverage all her skills has also become her passion. Stephanie is also a self-taught coder and is always looking for more opportunities to tap into her international experience and abilities to help build and realize successful enterprises.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN !-->
+
+    <!-- BEGIN SERVICES !-->
+    <div class="container text-center services" id="services">
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-10 col-xs-12">
+                <h1>OUR SERVICES</h1>
+                <p>
+                    <strong>How do we shine a spot light on innovative products worldwide?</strong></p>
+                <p>We don't really like labels but if we had to choose one, we'd call ourselves a market expansion service for consumer products. We help our clients expand their businesses and introduce their products to new markets. We do this by listening to the goals of our clients and then using our vast marketing, branding, sourcing and sales expertise to find new ways to compete, develop actionable go to market plans and seize market opportunity. In a nutshell, PS provides entrepreneurs and companies with a one-stop solution for their go-to-market and market expansion needs. So whether it's evaluating new marketplaces, discovering and navigating alternative channels, retooling, repositioning or resolving launch challenges PS just may be the partner for you. (We may want to insert something about our team + network here). </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-4 col-xs-12">
+                <h6>BRAND STRATEGY</h6>
+                <p>Brand Strategy
+                    <br>Content Strategy
+                    <br> Social Strategy
+                    <br> Portfolio Managment
+                    <br> Consumer Testing
+                    <br> Connections Planning
+                    <br> Consumer Anthropology
+                    <br> Customer Insights
+                    <br> Research</p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h6>BRAND CREATIVES</h6>
+                <p>Brand Idea Development
+                    <br> Campaign Development
+                    <br> Creative Execution
+                    <br> Creative Direction
+                    <br> Art Direction
+                    <br> Design
+                    <br> Copywriting
+                    <br> Creative Production
+                    <br> Public Relations</p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h6>MARKETING & PR</h6>
+                <p>Social/Digital Content Planning
+                    <br> Social/Digital Content Creation
+                    <br> Social/Didgital Content Production
+                    <br> Brand Ecosystem Planning
+                    <br> UX Design
+                    <br> Digital PR and Event Integration
+                    <br> Digital Promotions
+                    <br> Community Management</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-4 col-xs-12">
+                <h6>DISTRIBUTION & RETAIL</h6>
+                <p>Wholesale Distribution
+                    <br>Retail Placement
+                    <br>
+                </p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h6>PRODUCT SALES & CURATION</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+            <div class="col col-sm-4 col-xs-12">
+                <h6>PRODUCT DEVELOPEMENT <br>& SOURCING</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col col-sm-offset-1 col-sm-10 col-xs-12">
+                <h1>COMPLIMENTARY CONSULTATION</h1>
+                <p id="consultation">
+                    <p> We always start with a complimentary discovery call with our US market team. We've learned that each product or brand comes with different sets of goals, challenges, and needs. If we aren't a fit to help you achieve your ____, we promise to be 100% honest and let you know. We may even have someone in our network we can refer you to that would be a better match. No matter the project or partnership, we aim to continue helping to bring products that innovate and make life more enjoyable to more people.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- END SERVICES !-->
+
+    <hr>
+
+    <!-- BEGIN VALIDATION -->
+    <div class="container validation validation-container" id="validation">
+        <div class="row">
+            <h1>OUR TEAM'S EXPERTISE</h1>
+        </div>
+        <div class="row">
+            <img src="images/cocacola.png">
+            <img src="images/athletes.png">
+            <img src="images/flexflop.png">
+            <img src="images/dawn.png">
+            <img src="images/happybaby.png">
+            <img src="images/sprite.png">
+            <img src="images/snakku.png">
+        </div>
+    </div>
+    <!-- END VALIDATION -->
+
+    <!-- BEGIN FOOTER !-->
+    <div class="container footer footer-container">
+        <h2 id="contact">Interested in learning more? Drop us a line!</h2>
+        <a class="connect" href="mailTo:hello@plumsociety.com">CONNECT WITH US</a>
+        <!--<form action="#">
+            <input type="text" required placeholder="Name">
+            <input type="email" required placeholder="Email">
+            <input type="long-text" required placeholder="Type your message here...">
+            <button type="submit">Submit</button>
+        </form> -->
+        <!-- BEGIN NEW FOOTER FORM
+        <form>
+            <input class="form-control" type="text" placeholder="Full Name" required>
+            <input class="form-control" type="email" placeholder="example@email.com" required>
+            <input class="form-control" type="text" placeholder="Type your message here" required>
+            <button class="btn btn-primary" type="submit"><i class="fa fa-paper-plane"></i> Submit</button>
+        </form>-->
+        <p>New York &emsp;&emsp; &bull; &emsp;&emsp; Los Angeles &emsp;&emsp; &bull; &emsp;&emsp; Atlanta</p>
+        <p id="copyright">&copy; PLUM SOCIETY</p>
+    </div>
+    <!-- END FOOTER !-->
+
+
+</body>
+
 </html>
