@@ -41,6 +41,7 @@ h5 {
 h6 {
     letter-spacing: px;
     font: 500 20px/1.5 'Raleway', sans-serif !important;
+    color: #fff !important;
 }
 
 
@@ -181,10 +182,10 @@ CSS Settings For Wedo Section
 
 
 /*----------------------------------------------
-CSS Settings For Main Section
+CSS Settings For Services Section
 ------------------------------------------------*/
 
-.main-container {
+.services {
     height: auto;
     width: auto !important;
     background-image: linear-gradient(rgba(124, 103, 132, .8), rgba(124, 103, 132, .8)), url("images/main.jpg");
@@ -193,11 +194,30 @@ CSS Settings For Main Section
     margin: 0;
 }
 
-.main h1 {
+.services h1,
+h6 {
     color: #fff;
 }
 
-.main .row {
+.services .row p {
+    text-align: center;
+    color: #fff;
+}
+
+.services .row {
+    margin: 80px 0;
+}
+
+.services .row .col p {
+    margin: 0 20px;
+}
+
+
+/*----------------------------------------------
+CSS Settings For About Section
+------------------------------------------------*/
+
+.about .row {
     position: relative;
     margin: 40px 0;
     text-align: center;
@@ -246,26 +266,9 @@ CSS Settings For Main Section
     font: 500 15px/1.2 'Helvetica', sans-serif;
 }
 
-.main p {
-    color: #fff;
+.about p {
+    color: #333;
     text-align: justify;
-}
-
-
-/*----------------------------------------------
-CSS Settings For Services Section
-------------------------------------------------*/
-
-.services .row p {
-    text-align: center;
-}
-
-.services .row {
-    margin: 80px 0;
-}
-
-.services .row .col p {
-    margin: 0 20px;
 }
 
 
