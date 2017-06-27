@@ -1,0 +1,683 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Font Settings */
+
+h1 {
+    font: 100 30px/2 'Raleway', sans-serif !important;
+    color: #333;
+}
+
+h2 {
+    font-weight: 100 !important;
+    font-family: 'Raleway', sans-serif !important;
+}
+
+h3 {
+    width: 100%;
+    color: #333;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+h4 {
+    width: 100%;
+    color: #333;
+    text-align: center;
+    font: 800 20px/1.5 'Raleway', sans-serif !important;
+}
+
+h5 {
+    letter-spacing: 2px;
+    font: 300 40px/1.5 'Helvetica', sans-serif !important;
+}
+
+h6 {
+    letter-spacing: px;
+    font: 500 20px/1.5 'Raleway', sans-serif !important;
+    color: #fff !important;
+}
+
+
+/* HEADER BOOTSTRAP */
+
+.container-fluid {
+    background-color: rgba(124, 103, 132, .95);
+}
+
+#logo {
+    font: 100 2em/.8 'HelveticaNeue-Ultra-Light', 'Helvetica Neue Ultra Light', 'Helvetica Neue', 'Helvetica', sans-serif;
+    letter-spacing: 3px;
+    margin: auto;
+    color: #fff;
+}
+
+.navbar {
+    border: none !important;
+    border-radius: 0;
+}
+
+.navbar-default {
+    opacity: .6;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+    font-weight: 100;
+}
+
+.navbar-text-color {
+    color: #fff;
+    font: 200 1.2em/.8 'HelveticaNeue-Ultra-Light', 'Helvetica Neue Ultra Light', 'Helvetica Neue', 'Helvetica', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border: none !important;
+    font-size: 10px;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #9c8ca1 !important;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+    padding: auto;
+    margin: auto;
+    text-align: center;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    background-color: #9c8ca1 !important;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #9c8ca1 !important;
+}
+
+
+/* END HEADER BOOTSTRAP */
+
+
+/*----------------------------------------------
+CSS Settings For Jumbotron
+------------------------------------------------*/
+
+.jumbotron {
+    position: relative;
+    padding: 0 !important;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(images/cover.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    color: #fff;
+    height: 430px;
+    color: #fff !important;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.jumbotron img {
+    position: relative;
+    height: 65px;
+    margin-top: 220px;
+    margin-right: 40px;
+}
+
+.jumbotron p {
+    position: relative;
+    font: 200 8px/2 'Raleway', sans-serif !important;
+    letter-spacing: 2.8px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.connect {
+    position: relative;
+    border: 1px solid #fff;
+    padding: 6px 20px;
+    color: #fff;
+    font: 300 7px/1 'Raleway', sans-serif;
+    line-height: 3;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.jumbotron .connect {
+    margin-right: 70px;
+}
+
+.connect:hover {
+    background-color: rgba(124, 103, 132, .6) !important;
+    !important;
+    text-decoration: none !important;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/*----------------------------------------------
+CSS Settings For Wedo Section
+------------------------------------------------*/
+
+.supporting {
+    height: auto;
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.supporting img {
+    margin: 40px 30px 10px 30px;
+    height: 80px;
+}
+
+
+/*----------------------------------------------
+CSS Settings For Services Section
+------------------------------------------------*/
+
+.services {
+    height: auto;
+    width: auto !important;
+    background-image: linear-gradient(rgba(124, 103, 132, .8), rgba(124, 103, 132, .8)), url("images/main.jpg");
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+
+.services h1,
+h6 {
+    color: #fff;
+}
+
+.services .row p {
+    text-align: center;
+    color: #fff;
+}
+
+.services .row {
+    margin: 80px 0;
+}
+
+.services .row .col p {
+    margin: 0 20px;
+}
+
+
+/*----------------------------------------------
+CSS Settings For About Section
+------------------------------------------------*/
+
+.about .row {
+    position: relative;
+    margin: 40px 0;
+    text-align: center;
+}
+
+
+/* Overlay Hover */
+
+.image-wrapper {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.image-wrapper img {
+    height: 100%;
+}
+
+.image-wrapper .image-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 40px;
+    background-color: rgba(39, 24, 38, .8);
+    color: #fff;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.image-wrapper:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-wrapper .image-overlay .content {
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    width: 80%;
+    font: 500 15px/1.2 'Helvetica', sans-serif;
+}
+
+.about p {
+    color: #333;
+    text-align: justify;
+}
+
+
+/*----------------------------------------------
+CSS Settings For Validation Section
+------------------------------------------------*/
+
+.validation {
+    text-align: center;
+    margin: 40px;
+}
+
+.validation img {
+    height: 50px;
+    margin: 20px;
+}
+
+
+/*----------------------------------------------
+CSS Settings For Footer Section
+------------------------------------------------*/
+
+.footer {
+    height: auto;
+    background-color: #333;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.footer h2 {
+    padding: 10px 50px;
+    color: #fff !important;
+    text-transform: none;
+    font: 400 18px/1.3 'Raleway', sans-serif !important;
+}
+
+
+/*
+#sa_contactdiv {
+margin: 30px 500px;
+text-align: left;
+color: #fff;
+}
+
+input, textarea {
+width: 450px;
+margin: 5px 0 !important;
+line-height: 1.6 !important;
+background-color: #3c3c3c;
+border: 2px solid #7C6784;
+}
+
+#form-btn {
+position: relative;
+text-align: center;
+padding: 10px 30px;
+background-color: #7C6784;
+border: none; 
+margin: 0 130px !important;
+width: 200px !important;
+font-weight: 500;
+}
+
+#form-btn:hover {
+background-color: #b0acaa !important;
+}
+*/
+
+.footer p {
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#copyright {
+    margin-top: 10px;
+    text-align: right;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .jumbotron img {
+        height: 85px;
+        margin-right: 60px;
+        margin-top: 180px;
+    }
+    .jumbotron p {
+        font-size: 12px !important;
+        margin-right: 60px;
+    }
+    .jumbotron .connect {
+        margin-right: 110px !important;
+    }
+    .validation img {
+        height: 50px;
+        margin: 30px;
+    }
+    .connect {
+        font-size: 10px;
+    }
+    .footer h2 {
+        font-size: 20px !important;
+    }
+    .footer p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #copyright {
+        font-size: 12px;
+    }
+    .services .row {
+        margin: 0;
+    }
+    .services .row .col {
+        margin: 20px 0;
+    }
+    .services .row .col h6 {
+        margin: 10px 60px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 969px) {
+    .jumbotron {
+        height: 550px;
+    }
+    .jumbotron img {
+        height: 100px;
+        margin-right: 90px;
+        margin-top: 240px;
+    }
+    .jumbotron p {
+        font-size: 15px !important;
+        margin-right: 90px;
+    }
+    .jumbotron .connect {
+        margin-right: 150px !important;
+    }
+    .supporting p {
+        text-align: center;
+    }
+    .main .row {
+        margin: 40px 0;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin-left: 10px;
+    }
+    .main p {
+        margin-left: 10px;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .validation img {
+        height: 50px;
+        margin: 30px;
+    }
+    .footer h2 {
+        font-size: 22px !important;
+        margin: 30px auto;
+    }
+    .connect {
+        font-size: 12px;
+    }
+    .footer p {
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 970px) and (max-width: 1179px) {
+    .jumbotron {
+        height: 680px;
+    }
+    .jumbotron img {
+        height: 120px;
+        margin-top: 300px;
+        margin-right: 100px;
+    }
+    .jumbotron p {
+        font-size: 19px !important;
+        margin-right: 100px;
+    }
+    .jumbotron .connect {
+        margin-right: 190px !important;
+        line-height: 4;
+    }
+    .supporting p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .main .row {
+        margin: 60px 15px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: auto;
+    }
+    .main p {
+        margin: auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .validation img {
+        height: 70px;
+        margin: 40px;
+    }
+    .footer h2 {
+        font-size: 28px !important;
+        margin: 60px auto 50px auto;
+    }
+    .connect {
+        font-size: 12px;
+        padding: 13px 35px;
+    }
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1180px) and (max-width: 1359px) {
+    .jumbotron {
+        height: 700px;
+    }
+    .jumbotron img {
+        height: 160px;
+        margin-top: 260px;
+        margin-right: 80px;
+    }
+    .jumbotron p {
+        font-size: 2em !important;
+        margin-right: 80px;
+        letter-spacing: 2px;
+    }
+    .jumbotron .connect {
+        margin-right: 180px !important;
+    }
+    .supporting p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .main .row {
+        margin: 90px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: auto;
+    }
+    .main p {
+        margin: auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .validation img {
+        height: 70px;
+        margin: 40px;
+    }
+    .connect {
+        font-size: 18px;
+        padding: 14px 40px;
+        line-height: 4;
+    }
+    .footer h2 {
+        font-size: 28px !important;
+        margin: 50px auto 30px auto;
+    }
+    .footer p {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1360px) {
+    h1 {
+        font-size: 40px !important;
+    }
+    p {
+        font-size: 16px;
+    }
+    .navbar-text-color {
+        font-size: 17px;
+    }
+    .jumbotron {
+        height: 700px;
+    }
+    .jumbotron img {
+        height: 150px;
+        margin-right: 160px;
+        margin-top: 230px;
+    }
+    .jumbotron p {
+        font-size: 1.6em !important;
+        margin-right: 160px;
+        letter-spacing: 4px;
+    }
+    .connect {
+        font-size: 16px !important;
+        padding: 15px 50px;
+        border: 1px solid #fff;
+    }
+    .jumbotron .connect {
+        margin-right: 260px;
+        line-height: 6;
+    }
+    .supporting p {
+        text-align: center;
+    }
+    .image-wrapper {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 10px;
+        width: 360px;
+        height: 360px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .image-wrapper .image-overlay .content {
+        font-size: 18px;
+        left: 15%;
+        width: 70%;
+    }
+    .supporting h1,
+    .main h1 {
+        font-size: 50px !important;
+    }
+    .main .row {
+        margin: 90px;
+    }
+    .main h3,
+    h4,
+    p {
+        text-align: left;
+        margin: auto 30px;
+    }
+    .main p {
+        margin: auto 30px;
+        padding: 0;
+        font-weight: 400;
+        text-align: justify;
+        letter-spacing: .px;
+    }
+    .validation img {
+        height: 60px;
+        margin: 40px;
+    }
+    .footer h2 {
+        font-size: 35px !important;
+        margin: 50px;
+    }
+    .footer p {
+        margin-top: 70px;
+        font-size: 18px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+    #copyright {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1450px) {
+    .jumbotron {
+        height: 900px;
+    }
+    .jumbotron img {
+        margin-top: 380px;
+    }
+    .jumbotron img,
+    .jumbotron p {
+        margin-right: 200px;
+    }
+    .jumbotron .connect {
+        margin-right: 330px;
+    }
+    .validation img {
+        height: 80px;
+        margin: 40px 50px;
+    }
+}
